@@ -57,3 +57,33 @@ body {
   --br-481xl: 500px;
   --br-5xs: 8px;
 }
+
+/* Buttons */
+
+.button {
+  cursor: pointer;
+}
+
+.button--primary {
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-base);
+  background-color: var(--primary);
+  border-radius: var(--br-36xl);
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.button--secondary {
+  border: 2px solid var(--primary);
+  padding: var(--padding-5xs) var(--padding-base);
+  background-color: transparent;
+  border-radius: var(--br-36xl);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
