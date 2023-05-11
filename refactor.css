@@ -11,12 +11,12 @@
     /* font-family: var(--h3-desktop); */
 }
 
+/* ________________________________________________________________________ NAVBAR */
+
 .navbar {
     flex-direction: column;
     align-items: center;
-
     justify-content: center;
-
     background-color: var(--color-white);
     width: 100%;
     display: flex;
@@ -33,11 +33,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
 
-.navbar__button-logo-home{
-    background-color: transparent;
-    border: 0;
+    gap: var(--gap-0);
+    align-self: stretch;
+    width: auto;
 }
 
 .navbar__logo-icon {
@@ -52,60 +51,31 @@
     height: 2.4rem;
     overflow: hidden;
     flex-shrink: 0;
-    display: none;
 }
 
 .navbar__buttons-container {
+    display: none;
+}
+
+.navbar {
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
+    box-sizing: border-box;
+}
+
+.navbar__hamburguer-menu-icon {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-base);
 }
 
-.navbar__buttons-container1 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-13xl);
-}
-
-.navbar__button-contact-us {
-    width: 20rem;
-}
-
-.contact-us {
-    position: relative;
-    font-size: var(--link-desktop-size);
-    font-weight: 600;
-    font-family: var(--h3-desktop);
-    color: var(--primary);
-    text-align: left;
-}
-
-.navbar-button-schedule {
-    width: 20rem;
-}
-
-.schedule-a-meeting {
-    position: relative;
-    font-size: var(--link-desktop-size);
-    font-weight: 600;
-    font-family: var(--h3-desktop);
-    color: var(--color-white);
-    text-align: left;
-}
+/* ________________________________________________________________________ HERO */
 
 .hero,
-.hero-container {
+.hero__container {
   display: flex;
   align-items: center;
 }
 
-.hero-container {
-    width: 108rem;
+.hero__container {
     flex-direction: row;
     justify-content: flex-start;
     gap: var(--gap-xl);
@@ -124,7 +94,7 @@
     font-family: var(--h3-desktop);
 }
 
-.hero-text-block {
+.hero__text-block {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -133,7 +103,7 @@
     gap: 2.8rem;
 }
 
-.hero-text-block-title {
+.hero__text-block-title {
     margin: 0;
     align-self: stretch;
     position: relative;
@@ -142,7 +112,7 @@
     font-family: inherit;
 }
 
-.hero-text-block-text {
+.hero__text-block-text {
     margin: 0;
     align-self: stretch;
     position: relative;
@@ -151,7 +121,7 @@
     font-family: var(--link-desktop);
 }
 
-.hero-image-icon {
+.hero__image {
     flex: 1;
     position: relative;
     max-width: 100%;
@@ -163,35 +133,18 @@
 /* 1027 */
 
 @media screen and (max-width: 1200px) {
-    .navbar {
-        box-sizing: border-box;
-    }
-
-    .navbar {
-        padding: 1rem 2rem;
-    }
-
-    .navbar__elements-container {
-        gap: var(--gap-0);
-    }
-
-    .navbar__elements-container {
-        align-self: stretch;
-        width: auto;
-    }
-
     .hero {
         height: auto;
         padding: var(--padding-81xl) 2rem;
         box-sizing: border-box;
     }
 
-    .hero-container {
+    .hero__container {
         align-self: stretch;
         width: auto;
     }
 
-    .hero-image-icon {
+    .hero__image {
         height: 50%;
     }
 
@@ -202,19 +155,6 @@
 /* 1219 */
 
 @media screen and (max-width: 720px) {
-    .navbar {
-        padding-left: var(--padding-base);
-        padding-right: var(--padding-base);
-        box-sizing: border-box;
-    }
-
-    .navbar__hamburguer-menu-icon {
-        display: flex;
-    }
-
-    .navbar__buttons-container {
-      display: none;
-    }
 
     .hero {
         padding-left: var(--padding-base);
@@ -222,13 +162,13 @@
         box-sizing: border-box;
     }
 
-    .hero-container {
+    .hero__container {
         flex-direction: column;
         gap: var(--gap-29xl);
     }
 
-    .hero-image-icon,
-    .hero-text-block {
+    .hero__image,
+    .hero__text-block {
       flex: unset;
       align-self: stretch;
     }
@@ -236,7 +176,77 @@
 }
 
 /* 1407 - 1413 */
-
 @media screen and (max-width: 390px) {
 
+    /* All that remains here, put it above */
+
+
 }
+
+
+@media screen and (min-width: 390px) {
+
+    
+/* ________________________________________________________________________ NAVBAR */
+
+    /* _________Remove this after mobile first */
+
+
+    /* _____________________UNTIL HERE REMOVE */
+
+}
+
+
+@media screen and (min-width: 720px) {
+
+/* ________________________________________________________________________ NAVBAR */
+
+    .navbar {
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .navbar__hamburguer-menu {
+        display: none;
+    }
+
+    .navbar__buttons-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: var(--gap-base);
+    }
+
+    .navbar__button-contact-us {
+        width: 20rem;
+    }
+    
+    .navbar-button-schedule {
+        width: 20rem;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+/* ________________________________________________________________________ NAVBAR */
+
+    .navbar__elements-container{
+        align-self: center;
+        width: 108rem;
+    }
+
+/* ________________________________________________________________________ HERO */
+    .hero__container {
+        width: 108rem;
+    }
+
+    
+}
+
