@@ -50,6 +50,10 @@ body {
   --padding-5xs: 0.8rem;
   --padding-6xs: 0.6rem;
 
+  /* Margins */
+  
+  --margin-64 : 6.4rem;
+
   /* border radiuses */
   --br-base: 16px;
   --br-36xl: 55px;

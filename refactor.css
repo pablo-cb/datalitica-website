@@ -69,84 +69,11 @@
 
 /* ________________________________________________________________________ HERO */
 
-.hero,
-.hero__container {
-  display: flex;
-  align-items: center;
-}
-
-.hero__container {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: var(--gap-xl);
-}
-
-.hero {
-    align-self: stretch;
-    background: linear-gradient(2.4deg, #5d19ff, #008eff);
-    height: 80vh;
-    flex-direction: column;
-    justify-content: center;
-    max-height: 90%;
-    text-align: left;
-    font-size: var(--h1-desktop-size);
-    color: var(--color-white);
-    font-family: var(--h3-desktop);
-}
-
-.hero__text-block {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 2.8rem;
-}
-
-.hero__text-block-title {
-    margin: 0;
-    align-self: stretch;
-    position: relative;
-    font-size: inherit;
-    font-weight: 700;
-    font-family: inherit;
-}
-
-.hero__text-block-text {
-    margin: 0;
-    align-self: stretch;
-    position: relative;
-    font-size: var(--link-desktop-size);
-    line-height: 2.4rem;
-    font-family: var(--link-desktop);
-}
-
-.hero__image {
-    flex: 1;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    height: 37.45rem;
-    object-fit: cover;
-}
 
 /* 1027 */
 
 @media screen and (max-width: 1200px) {
-    .hero {
-        height: auto;
-        padding: var(--padding-81xl) 2rem;
-        box-sizing: border-box;
-    }
 
-    .hero__container {
-        align-self: stretch;
-        width: auto;
-    }
-
-    .hero__image {
-        height: 50%;
-    }
 
 }
 
@@ -156,22 +83,6 @@
 
 @media screen and (max-width: 720px) {
 
-    .hero {
-        padding-left: var(--padding-base);
-        padding-right: var(--padding-base);
-        box-sizing: border-box;
-    }
-
-    .hero__container {
-        flex-direction: column;
-        gap: var(--gap-29xl);
-    }
-
-    .hero__image,
-    .hero__text-block {
-      flex: unset;
-      align-self: stretch;
-    }
 
 }
 
@@ -243,10 +154,8 @@
     }
 
 /* ________________________________________________________________________ HERO */
-    .hero__container {
-        width: 108rem;
-    }
 
-    
-}
+
+
+} 
 
