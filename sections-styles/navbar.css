@@ -1,0 +1,114 @@
+.navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    width: 100%;
+    display: flex;
+    padding: var(--padding-base) 0;
+    box-sizing: border-box;
+    gap: var(--gap-13xl);
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar__elements-container {
+    width: 108rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--gap-0);
+    align-self: stretch;
+    width: auto;
+}
+
+.navbar__logo-icon {
+    position: relative;
+    width: 17.42rem;
+    height: 3.2rem;
+}
+
+.navbar__hamburguer-menu-icon {
+    position: relative;
+    width: 2.4rem;
+    height: 2.4rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.navbar__buttons-container {
+    display: none;
+}
+
+.navbar {
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
+    box-sizing: border-box;
+}
+
+.navbar__hamburguer-menu-icon {
+    display: flex;
+}
+
+
+/* _________________________________________________________________________Tablet */
+
+@media screen and (min-width: 390px) {
+
+
+
+}
+
+
+
+/* _________________________________________________________________________Small Laptop */
+
+
+@media screen and (min-width: 720px) {
+
+    .navbar {
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .navbar__hamburguer-menu {
+        display: none;
+    }
+
+    .navbar__buttons-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: var(--gap-base);
+    }
+
+    .navbar__button-contact-us {
+        width: 20rem;
+    }
+    
+    .navbar-button-schedule {
+        width: 20rem;
+    }
+
+
+
+}
+
+/* _________________________________________________________________________Desktop */
+
+@media screen and (min-width: 1200px) {
+
+
+    .navbar__elements-container{
+        align-self: center;
+        width: 108rem;
+    }
+
+} 
+
