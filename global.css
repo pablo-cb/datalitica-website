@@ -1,9 +1,17 @@
 html {
   font-size: 10px;
+  box-sizing: border-box;
+
 }
 body {
   margin: 0;
   line-height: normal;
+}
+
+/* Set border-box to all the elements */
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 :root {

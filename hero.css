@@ -15,7 +15,6 @@
     flex-direction: column;
     gap: var(--gap-29xl);
     justify-content: center;
-    /* align-self: stretch; */
     width: auto;
 }
 
@@ -28,15 +27,11 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
     gap: 2.8rem;
 }
 
 .hero__text-block-title {
     margin: 0;
-    align-self: stretch;
-    position: relative;
     font-size: inherit;
     font-weight: 700;
     font-family: inherit;
@@ -45,8 +40,6 @@
 
 .hero__text-block-text {
     margin: 0;
-    align-self: stretch;
-    position: relative;
     font-size: var(--link-desktop-size);
     line-height: 2.4rem;
     font-family: var(--link-desktop);
@@ -54,21 +47,13 @@
 
 .hero__image {
     flex: 1;
-    position: relative;
     max-width: 100%;
     overflow: hidden;
-    /* height: 37.45rem; */
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 .hero__image {
     height: 50%;
-}
-
-.hero__image,
-.hero__text-block {
-  flex: unset;
-  align-self: stretch;
 }
 
 /* _________________________________________________________________________Tablet */
@@ -91,26 +76,16 @@
     .hero__container {
         flex-direction: row;
         gap: var(--gap-xl);
-        /* align-self: stretch; */
         justify-content: space-between;
-        align-items: center;
+        /* align-items: center; */
     }
-
-    .hero__text-block {
-        /* width: fit-content; */
-        justify-content: center;
-    }
-
 
 }
 
 /* _________________________________________________________________________Desktop */
 
 @media screen and (min-width: 1200px) {
-
     .hero__container {
         width: 108rem;
     }
-
-    
 }
