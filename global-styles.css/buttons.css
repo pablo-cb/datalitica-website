@@ -1,39 +1,27 @@
-button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  .button {
-    position: relative;
-    font-size: var(--link-desktop-size);
-    font-weight: 600;
-    font-family: var(--h3-desktop);
-    text-align: center;
-  }
-  
-  .button-primary {
+.button-primary {
     border: 0;
     padding: var(--padding-5xs) var(--padding-base);
     background-color: var(--primary);
     border-radius: var(--br-36xl);
     display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    align-items: center;
     justify-content: center;
     color: var(--color-white);
-  }
-  
-  .button-secondary {
+}
+
+.button-secondary {
     border: 2px solid var(--primary);
     padding: var(--padding-6xs) var(--padding-base);
     background-color: transparent;
     border-radius: var(--br-36xl);
-    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
     color: var(--primary);
-  }
+}
+
+.button-tertiary {
+    padding: var(--padding-3xs) var(--padding-3xs);
+    border-radius: var(--br-36xl);
+    display: flex;
+    justify-content: center;
+    color: var(--accent-turquoise);
+}

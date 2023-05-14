@@ -14,6 +14,29 @@ body {
   box-sizing: inherit;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+li {
+margin: 0;
+padding: 0;
+}
+
+
 :root {
   /* fonts */
   --link-desktop: "Fira Sans";
@@ -21,20 +44,31 @@ body {
   --font-inter: Inter;
 
   /* font sizes */
-  --link-desktop-size: 1.6rem;
-  --h3-desktop-size: 2.8rem;
-  --h5-desktop-size: 2rem;
-  --h2-desktop-size: 4rem;
-  --font-size-lg: 1.8rem;
   --h1-desktop-size: 4.2rem;
+  --h1-mobile-size: 3.8rem;
+  --h2-desktop-size: 4rem;
+  --h3-desktop-size: 2.8rem;
+  --h4-desktop-size: 2rem;
+  --h4-mobile-size: 1.8rem;
+  --h5-desktop-size: 2rem;
+  --h6-desktop-size: 1.6rem;
+  --body-desktop-size: 1.6rem;
+  --button-desktop-size: 1.6rem;
+  --link-desktop-size: 1.6rem;
+  --label-desktop-size: 1.6rem;
+  
+  --font-size-lg: 1.8rem;
 
   /* Colors */
-  --color-white: #fff;
+  --primary: #5d19ff;
+  --dark-purple: #4324A3;
   --dark-base: #002340;
   --accent-turquoise: #0dffeb;
-  --color-aqua-100: rgba(13, 255, 235, 0.2);
-  --primary: #5d19ff;
+  --base-blue: #008EFF;
   --base-gray: #e7e9ea;
+  --color-white: #fff;
+
+  --color-aqua-100: rgba(13, 255, 235, 0.2);
   --color-black: #000;
 
   /* Gaps */
@@ -73,42 +107,3 @@ body {
 
 /* Buttons */
 
-button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.button {
-  position: relative;
-  font-size: var(--link-desktop-size);
-  font-weight: 600;
-  font-family: var(--h3-desktop);
-  text-align: center;
-}
-
-.button-primary {
-  border: 0;
-  padding: var(--padding-5xs) var(--padding-base);
-  background-color: var(--primary);
-  border-radius: var(--br-36xl);
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-white);
-}
-
-.button-secondary {
-  border: 2px solid var(--primary);
-  padding: var(--padding-6xs) var(--padding-base);
-  background-color: transparent;
-  border-radius: var(--br-36xl);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary);
-}

@@ -20,9 +20,7 @@
 
 .hero__text-block {
     text-align: left;
-    font-size: var(--h1-desktop-size);
     color: var(--color-white);
-    font-family: var(--h3-desktop);
 
     flex: 1;
     display: flex;
@@ -32,17 +30,11 @@
 
 .hero__text-block-title {
     margin: 0;
-    font-size: inherit;
-    font-weight: 700;
-    font-family: inherit;
 }
 
 
 .hero__text-block-text {
     margin: 0;
-    font-size: var(--link-desktop-size);
-    line-height: 2.4rem;
-    font-family: var(--link-desktop);
 }
 
 .hero__image {

@@ -1,10 +1,9 @@
 .index {
     background-color: var(--dark-base);
     position: sticky;
-    top: 7.2rem;
+    top: 6rem;
     width: 100%;
     z-index: 1;
-    font-size: var(--link-desktop-size);
     color: var(--accent-turquoise);
     display: none;
 }
@@ -22,7 +21,6 @@
     text-decoration: none;
     text-align: center;
     position: relative;
-    font-weight: 600;
     color: inherit;
 }
     
@@ -38,7 +36,7 @@
 
     .index {
         display: flex;
-        padding: 2.4rem 2rem;
+        padding: 2rem 2rem;
     }
 
     .index-container {

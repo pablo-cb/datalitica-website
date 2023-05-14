@@ -1,0 +1,112 @@
+.h1-global-font {
+    font-family: var(--h3-desktop);
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--h1-mobile-size);
+    line-height: normal;
+}
+
+.h2-global-font {
+    font-family: var(--h3-desktop);
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--h2-desktop-size);
+    line-height: normal;
+}
+
+.h3-global-font {
+    font-family: var(--h3-desktop);
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--h3-desktop-size);
+    line-height: normal;
+}
+
+.h4-global-font {
+    font-family: var(--h3-desktop);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--h4-mobile-size);
+    line-height: normal;
+}
+
+.h5-global-font {
+    font-family: var(--h3-desktop);
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--h5-desktop-size);
+    line-height: normal;
+}
+
+.h6-global-font {
+    font-family: var(--h3-desktop);
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--h6-desktop-size);
+    line-height: normal;
+}
+
+.body-global-font {
+    font-family: var(--link-desktop);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--body-desktop-size);
+    line-height: 2.4rem;
+}
+
+.button-global-font {
+    /* position: relative; */
+    font-family: var(--h3-desktop);
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--button-desktop-size);
+    line-height: normal;
+    text-align: center;
+}
+
+.link-global-font {
+    font-family: var(--link-desktop);
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--link-desktop-size);
+    line-height: normal;
+}
+
+.label-global-font {
+    font-family: var(--h3-desktop);
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--label-desktop-size);
+    line-height: normal;
+}
+
+
+
+/* _________________________________________________________________________Tablet */
+
+@media screen and (min-width: 390px) {
+
+    .h1-global {
+        font-size: var(--h1-desktop-size);
+    }
+
+    .h4-global {
+        font-size: var(--h4-desktop-size);
+    }
+
+}
+
+/* _________________________________________________________________________Small Laptop */
+
+@media screen and (min-width: 720px) {
+
+
+}
+
+/* _________________________________________________________________________Desktop */
+
+@media screen and (min-width: 1200px) {
+
+
+
+}
