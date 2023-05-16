@@ -1,4 +1,5 @@
 .h1-global-font {
+    margin: 0;
     font-family: var(--h3-desktop);
     font-style: normal;
     font-weight: 700;
@@ -7,6 +8,7 @@
 }
 
 .h2-global-font {
+    margin: 0;
     font-family: var(--h3-desktop);
     font-style: normal;
     font-weight: 600;
@@ -15,6 +17,7 @@
 }
 
 .h3-global-font {
+    margin: 0;
     font-family: var(--h3-desktop);
     font-style: normal;
     font-weight: 600;
@@ -23,6 +26,7 @@
 }
 
 .h4-global-font {
+    margin: 0;
     font-family: var(--h3-desktop);
     font-style: normal;
     font-weight: 400;
@@ -31,6 +35,7 @@
 }
 
 .h5-global-font {
+    margin: 0;
     font-family: var(--h3-desktop);
     font-style: normal;
     font-weight: 700;
@@ -39,6 +44,7 @@
 }
 
 .h6-global-font {
+    margin: 0;
     font-family: var(--h3-desktop);
     font-style: normal;
     font-weight: 600;
@@ -47,6 +53,7 @@
 }
 
 .body-global-font {
+    margin: 0;
     font-family: var(--link-desktop);
     font-style: normal;
     font-weight: 400;
@@ -56,6 +63,7 @@
 
 .button-global-font {
     /* position: relative; */
+    margin: 0;
     font-family: var(--h3-desktop);
     font-style: normal;
     font-weight: 600;
@@ -65,6 +73,7 @@
 }
 
 .link-global-font {
+    margin: 0;
     font-family: var(--link-desktop);
     font-style: normal;
     font-weight: 500;
@@ -73,6 +82,7 @@
 }
 
 .label-global-font {
+    margin: 0;
     font-family: var(--h3-desktop);
     font-style: normal;
     font-weight: 700;
@@ -86,11 +96,11 @@
 
 @media screen and (min-width: 390px) {
 
-    .h1-global {
+    .h1-global-font {
         font-size: var(--h1-desktop-size);
     }
 
-    .h4-global {
+    .h4-global-font {
         font-size: var(--h4-desktop-size);
     }
 

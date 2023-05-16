@@ -1,0 +1,132 @@
+.services {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-81xl) var(--padding-base);
+}
+.services,
+.services__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services__container {
+  flex-direction: column;
+}
+
+.services__image {
+  position: relative;
+  max-width: 100%;
+  height: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.services__content {
+  gap: var(--gap-base);
+}
+
+.services__content,
+.services__image {
+  flex: unset;
+  align-self: stretch;
+}
+
+.services__expand-card-title,
+.services__title {
+  margin: 0;
+  position: relative;
+}
+
+.services__expand-card-expand-icon {
+  position: relative;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.services__expand-card-minimize-icon {
+  position: relative;
+  width: 2.4rem;
+  height: 0;
+  display: none;
+}
+.services__expand-card-title-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.services__expand-card-text {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  line-height: 2.4rem;
+}
+.services__expand-card-expanded {
+  align-self: stretch;
+  border-top: 1px solid var(--base-gray);
+  display: none;
+  flex-direction: row;
+  padding: var(--padding-base) 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.services__expand-card {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  box-shadow: 0 2px 6px rgba(0, 142, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-base);
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-base);
+}
+.services__content,
+.services__expand-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.services__expand-cards {
+  align-self: stretch;
+  gap: var(--gap-xl);
+}
+
+@media screen and (min-width: 720px) {
+
+  .services {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+  }
+
+  .services__container {
+    flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .services__content {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .services__image {
+    flex: 1;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .services__container {
+    width: 108rem;
+  }
+
+  .services__image {
+    height: 51rem;
+  }
+} 
+
