@@ -95,6 +95,7 @@ padding: 0;
   /* Margins */
   
   --margin-64 : 6.4rem;
+  --margin-medium: 10rem;
 
   /* border radiuses */
   --br-base: 16px;
