@@ -7,20 +7,20 @@
     padding-left: 0;
     padding-right: 0;
     overflow: hidden;
-  }
-  
-  .clients,
-  .section4 {
+}
+
+.clients,
+.section4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .about-us__cards.animate {
+}
+
+.about-us__cards.animate {
     animation: 1s ease 0s 1 normal forwards fade-in;
-  }
-  
-  .about-us__bg-image-icon {
+}
+
+.about-us__bg-image-icon {
     position: absolute;
     margin: 0;
     top: 0;
@@ -29,21 +29,21 @@
     height: 145.21rem;
     object-fit: cover;
     z-index: 0;
-  }
-  
-  .about-us,
-  .about-us__cards,
-  .about-us__container {
+}
+
+.about-us,
+.about-us__cards,
+.about-us__container {
     width: auto;
-  }
-  
-  .about-us,
-  .about-us__container {
+}
+
+.about-us,
+.about-us__container {
     display: flex;
     flex-direction: column;
-  }
-  
-  .about-us {
+}
+
+.about-us {
     align-self: stretch;
     background-color: var(--dark-base);
     overflow: hidden;
@@ -54,40 +54,40 @@
     align-items: center;
     justify-content: center;
     position: relative;
-  }
-  
-  .about-us__container {
+}
+
+.about-us__container {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 4.6rem;
     z-index: 1;
-  }
-  
-  .about-us__card,
-  .about-us__card-text-block,
-  .about-us__card-titles {
+}
+
+.about-us__card,
+.about-us__card-text-block,
+.about-us__card-titles {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-  }
-  
-  .about-us__card {
+}
+
+.about-us__card {
     flex: unset;
     /* align-self: stretch; */
-  }
-  
-  .about-us__text-block {
+}
+
+.about-us__text-block {
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: var(--gap-base);
-  }
-  
-  
-  .about-us__cards {
+}
+
+
+.about-us__cards {
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -96,9 +96,9 @@
     gap: var(--gap-xl);
     /* opacity: 0; */
     color: var(--dark-base);
-  }
-  
-  .about-us__card-image {
+}
+
+.about-us__card-image {
     flex: 1;
     min-width: 100%;
     max-width: 100%;
@@ -106,9 +106,9 @@
     max-height: 100%;
     overflow: hidden;
     border-radius: var(--br-3xs) var(--br-3xs) 0 0;
-  }
-  
-  .about-us__card-text-block {
+}
+
+.about-us__card-text-block {
     align-self: stretch;
     border-radius: 0 0 var(--br-3xs) var(--br-3xs);
     background-color: var(--color-white);
@@ -120,21 +120,21 @@
     gap: var(--gap-base);
     align-items: flex-start;
     justify-content: flex-start;
-  }
-  
-  .about-us__card-titles {
+}
+
+.about-us__card-titles {
     align-self: stretch;
     gap: var(--gap-9xs);
-  }
-  
-  .about-us__card-position {
+}
+
+.about-us__card-position {
     margin: 0;
     align-self: stretch;
     position: relative;
-  }
-  
-  
-  .clients {
+}
+
+
+.clients {
     border-radius: var(--br-base);
     background-color: var(--color-white);
     box-shadow: 1px 0 14px rgba(0, 35, 64, 0.12);
@@ -149,127 +149,104 @@
     color: var(--dark-base);
     margin-left: 1.6rem;
     margin-right: 1.6rem;
-  }
-  .clients {
+}
+.clients {
     align-self: stretch;
     width: auto;
     overflow: hidden;
-  }
-  
-  
-  .clients__logos-container {
+}
+
+
+.clients__logos-container {
     align-self: stretch;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: var(--gap-xl);
+    justify-content: center;
+    gap: var(--padding-13xl);
     overflow: hidden;
-  }
-  
-  .clients__logo {
+}
+
+.clients__logo {
     position: relative;
     width: 25.5rem;
     height: 6.33rem;
     object-fit: cover;
-  }
+}
+
   
   
-  
-  
-  /* 1027 */
-  
-  @media screen and (max-width: 1200px) {
-  
-  
-  
-  }
-  
-  
-  
-  /* 1219 */
-  
-  @media screen and (max-width: 720px) {
-  
-  
-  
-  }
-  
-  /* 1407 - 1413 */
-  @media screen and (max-width: 390px) {
-  
-  
-  }
-  
-  
-  @media screen and (min-width: 390px) {
-  
-  
-  }
-  
-  
-  @media screen and (min-width: 720px) {
-  
+@media screen and (min-width: 390px) {
+
+
+}
+
+
+@media screen and (min-width: 720px) {
+
     .about-us {
-      padding-left: var(--padding-xl);
-      padding-right: var(--padding-xl);
+        padding-left: var(--padding-xl);
+        padding-right: var(--padding-xl);
     }
     .about-us__text-block {
-      width: 53rem;
+        width: 53rem;
     }
-  
+
     .about-us__cards {
-      flex-direction: row;
-      /* flex: unset; */
+        flex-direction: row;
+        /* flex: unset; */
     }
-  
+
     .about-us__card {
-      flex: 1;
-      /* align-self: stretch; */
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 0%;
+        flex: 1;
+        /* align-self: stretch; */
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
     }
     .about-us__card-image {
-      position: relative;
-      object-fit: cover;
-      flex: unset;
+        position: relative;
+        object-fit: cover;
+        flex: unset;
     }
     .clients {
-      margin-left: 2rem;
-      margin-right: 2rem;
-      align-self:center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        align-self:center;
     }
-  
-  
+
+    .clients__logos-container {
+        justify-content:space-between;
+    }
+
+
     .about-us__card-text-block {
-      padding-left: var(--padding-xl);
-      padding-right: var(--padding-xl);
+        padding-left: var(--padding-xl);
+        padding-right: var(--padding-xl);
     }
-  
-  }
-  
-  @media screen and (min-width: 1200px) {
-  
+
+}
+
+@media screen and (min-width: 1200px) {
+
     .about-us {
-      padding-left: 0rem;
-      padding-right: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
-  
+
     .about-us__container {
-      width: 108rem;
+        width: 108rem;
     }
-  
+
     .about-us__card-image {
-      /* position: relative; */
-      width: 53rem;
-      height: 33.3rem;
-      /* object-fit: cover; */
+        /* position: relative; */
+        width: 53rem;
+        height: 33.3rem;
+        /* object-fit: cover; */
     }
-  
+
     .clients {
-      width: 108rem;
+        width: 108rem;
     }
-  
-  }
+}
