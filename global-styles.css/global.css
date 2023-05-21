@@ -2,6 +2,7 @@ html {
   font-size: 10px;
   box-sizing: border-box;
   background-color: var(--color-white);
+  /* overflow: hidden; */
 }
 body {
   margin: 0;
