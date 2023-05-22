@@ -1,0 +1,86 @@
+.cta-meeting {
+    align-self: stretch;
+    padding-bottom: var(--padding-81xl);
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
+    text-align: center;
+    font-size: 4.8rem;
+    color: var(--color-white);
+    width: auto;
+}
+
+.cta-meeting,
+.cta-meeting__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-meeting,
+.cta-meeting__card {
+    flex-direction: column;
+}
+
+.cta-meeting__card {
+    border-radius: var(--br-base);
+    background: linear-gradient(
+        90deg,
+        #5d19ff,
+        #5621ff 4%,
+        #3748ff 24%,
+        #1f66ff 44%,
+        #0d7cff 64%,
+        #0389ff 83%,
+        #008eff
+    );
+    gap: 3.8rem;
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
+    height: auto;
+    padding-top: var(--padding-29xl);
+    padding-bottom: var(--padding-29xl);
+}
+
+.cta-meeting__card,
+.cta-meeting__title {
+    align-self: stretch;
+    width: auto;
+}
+
+.cta-meeting__button {
+    align-self: stretch;
+    width: auto;
+}
+
+@media screen and (min-width: 720px) {
+
+    .cta-meeting {
+        padding-left: var(--padding-xl);
+        padding-right: var(--padding-xl);
+    }
+
+    .cta-meeting__button {
+        align-self:center;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .cta-meeting {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .cta-meeting__card {
+        align-self: center;
+        width: 108rem;
+        height: 35.8rem;
+    }
+
+    .cta-meeting__title {
+        width: 86.7rem;
+        align-self: center;
+    }
+
+}

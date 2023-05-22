@@ -8,6 +8,16 @@
     color: var(--color-white);
 }
 
+.button-primary--blue-bg {
+    border: 0;
+    padding: var(--padding-5xs) var(--padding-base);
+    background-color: var(--accent-turquoise);
+    border-radius: var(--br-36xl);
+    display: flex;
+    justify-content: center;
+    color: var(--primary);
+}
+
 .button-secondary {
     border: 2px solid var(--primary);
     padding: var(--padding-6xs) var(--padding-base);
