@@ -1,6 +1,6 @@
 .h1-global-font {
     margin: 0;
-    font-family: var(--h3-desktop);
+    font-family: var(--titles-font);
     font-style: normal;
     font-weight: 700;
     font-size: var(--h1-mobile-size);
@@ -9,7 +9,7 @@
 
 .h2-global-font {
     margin: 0;
-    font-family: var(--h3-desktop);
+    font-family: var(--titles-font);
     font-style: normal;
     font-weight: 600;
     font-size: var(--h2-desktop-size);
@@ -18,7 +18,7 @@
 
 .h3-global-font {
     margin: 0;
-    font-family: var(--h3-desktop);
+    font-family: var(--titles-font);
     font-style: normal;
     font-weight: 600;
     font-size: var(--h3-desktop-size);
@@ -27,7 +27,7 @@
 
 .h4-global-font {
     margin: 0;
-    font-family: var(--h3-desktop);
+    font-family: var(--titles-font);
     font-style: normal;
     font-weight: 400;
     font-size: var(--h4-mobile-size);
@@ -36,7 +36,7 @@
 
 .h5-global-font {
     margin: 0;
-    font-family: var(--h3-desktop);
+    font-family: var(--titles-font);
     font-style: normal;
     font-weight: 700;
     font-size: var(--h5-desktop-size);
@@ -45,7 +45,7 @@
 
 .h6-global-font {
     margin: 0;
-    font-family: var(--h3-desktop);
+    font-family: var(--titles-font);
     font-style: normal;
     font-weight: 600;
     font-size: var(--h6-desktop-size);
@@ -54,7 +54,7 @@
 
 .body-global-font {
     margin: 0;
-    font-family: var(--link-desktop);
+    font-family: var(--base-font);
     font-style: normal;
     font-weight: 400;
     font-size: var(--body-desktop-size);
@@ -64,7 +64,7 @@
 .button-global-font {
     /* position: relative; */
     margin: 0;
-    font-family: var(--h3-desktop);
+    font-family: var(--titles-font);
     font-style: normal;
     font-weight: 600;
     font-size: var(--button-desktop-size);
@@ -73,17 +73,18 @@
 }
 
 .link-global-font {
+    cursor: pointer;
     margin: 0;
-    font-family: var(--link-desktop);
+    font-family: var(--base-font);
     font-style: normal;
     font-weight: 500;
-    font-size: var(--link-desktop-size);
+    font-size: var(--base-font-size);
     line-height: normal;
 }
 
 .label-global-font {
     margin: 0;
-    font-family: var(--h3-desktop);
+    font-family: var(--titles-font);
     font-style: normal;
     font-weight: 700;
     font-size: var(--label-desktop-size);

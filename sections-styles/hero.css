@@ -8,12 +8,12 @@
     align-self: stretch;
     background: linear-gradient(2.4deg, #5d19ff, #008eff);
     justify-content: center;
-    padding: 10rem var(--padding-base);
+    padding: 10rem var(--padding-16px);
 }
 
 .hero__container {
     flex-direction: column;
-    gap: var(--gap-29xl);
+    gap: var(--gap-48px);
     justify-content: center;
     width: auto;
 }
@@ -61,13 +61,13 @@
 @media screen and (min-width: 720px) {
 
     .hero {
-        padding: var(--padding-xl) 2rem;
+        padding: var(--padding-20px) 2rem;
         height: 80vh;
     }
 
     .hero__container {
         flex-direction: row;
-        gap: var(--gap-xl);
+        gap: var(--gap-20px);
         justify-content: space-between;
         /* align-items: center; */
     }

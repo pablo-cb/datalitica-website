@@ -1,8 +1,8 @@
 .button-primary {
     border: 0;
-    padding: var(--padding-5xs) var(--padding-base);
+    padding: var(--padding-8px) var(--padding-16px);
     background-color: var(--primary);
-    border-radius: var(--br-36xl);
+    border-radius: var(--br-55px);
     display: flex;
     justify-content: center;
     color: var(--color-white);
@@ -10,9 +10,9 @@
 
 .button-primary--blue-bg {
     border: 0;
-    padding: var(--padding-5xs) var(--padding-base);
+    padding: var(--padding-8px) var(--padding-16px);
     background-color: var(--accent-turquoise);
-    border-radius: var(--br-36xl);
+    border-radius: var(--br-55px);
     display: flex;
     justify-content: center;
     color: var(--primary);
@@ -20,17 +20,17 @@
 
 .button-secondary {
     border: 2px solid var(--primary);
-    padding: var(--padding-6xs) var(--padding-base);
+    padding: var(--padding-6px) var(--padding-16px);
     background-color: transparent;
-    border-radius: var(--br-36xl);
+    border-radius: var(--br-55px);
     display: flex;
     justify-content: center;
     color: var(--primary);
 }
 
 .button-tertiary {
-    padding: var(--padding-3xs) var(--padding-3xs);
-    border-radius: var(--br-36xl);
+    padding: var(--padding-10px) var(--padding-10px);
+    border-radius: var(--br-55px);
     display: flex;
     justify-content: center;
     color: var(--accent-turquoise);
@@ -38,5 +38,5 @@
 
 .icon-button {
     background-color: transparent;
-    padding: var(--padding-3xs);
+    padding: var(--padding-10px);
   }

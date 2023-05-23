@@ -1,16 +1,16 @@
 .testimonials {
     display: flex;
     flex-direction: column;
-    padding: var(--padding-131xl) 0;
+    padding: var(--padding-150px) 0;
     justify-content: center;
-    gap: var(--gap-45xl);
+    gap: var(--gap-64px);
     width: auto;
 }
 
 .testimonials__carousel-indicator,
 .testimonials__title {
-    padding-left: var(--gap-base);
-    padding-right: var(--gap-base);
+    padding-left: var(--gap-16px);
+    padding-right: var(--gap-16px);
 }
 
 /* _______________________________________________________________  Carousel */
@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: var(--gap-13xl);
+    gap: var(--gap-32px);
     width: auto;
     height: auto;
 }
@@ -33,7 +33,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: var(--gap-13xl);
+    gap: var(--gap-32px);
     align-self: stretch;
     width: auto;
     overflow: hidden;
@@ -52,7 +52,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: var(--gap-base);
+    gap: var(--gap-16px);
     opacity: 1;
     width: auto;
     max-width: 108rem;
@@ -86,18 +86,18 @@ flex: 1;
 
 .testimonials__carousel-item {
     flex: 1;
-    border-radius: var(--br-3xs);
+    border-radius: var(--br-10px);
     background-color: var(--color-aqua-100);
-    padding: var(--padding-13xl) var(--padding-xl);
-    gap: var(--gap-lg);
+    padding: var(--padding-32px) var(--padding-20px);
+    gap: var(--gap-18px);
 }
 
 .testimonials__carousel-item {
     flex: 1;
-    border-radius: var(--br-3xs);
+    border-radius: var(--br-10px);
     background-color: var(--color-aqua-100);
-    padding: var(--padding-13xl) var(--padding-xl);
-    gap: var(--gap-lg);
+    padding: var(--padding-32px) var(--padding-20px);
+    gap: var(--gap-18px);
 }
 
 .testimonials__carousel-item-text-block {
@@ -115,7 +115,7 @@ flex: 1;
 
 .testimonials__carousel-item-image {
     position: relative;
-    border-radius: var(--br-481xl);
+    border-radius: var(--br-500px);
     width: 8rem;
     height: 8rem;
     object-fit: cover;
@@ -123,7 +123,7 @@ flex: 1;
 
 .testimonials__carousel-item-text-block{
     align-self: stretch;
-    gap: var(--gap-base);
+    gap: var(--gap-16px);
 }
 
 
@@ -137,19 +137,19 @@ flex: 1;
     width: auto;
     flex-direction: row;
     display: flex;
-    gap: var(--gap-13xl);
+    gap: var(--gap-32px);
 }
 
 .testimonials__carousel-indicator-dot,
 .testimonials__carousel-indicator-dot- {
   position: relative;
-  border-radius: var(--br-6xs);
+  border-radius: var(--br-7px);
   width: 7.3rem;
   height: 1.4rem;
 }
 .testimonials__carousel-indicator-dots {
     display: flex;
-    gap: var(--gap-9xs);
+    gap: var(--gap-4px);
 }
 
 .testimonials__carousel-indicator-dot- {
@@ -199,7 +199,7 @@ flex: 1;
     /* _______________________________________________________________  Cards container */
 
     .testimonials__carousel-items-holder {
-        gap: var(--gap-xl);
+        gap: var(--gap-20px);
     }
 
     /* _______________________________________________________________ Carousel Indicator Components */

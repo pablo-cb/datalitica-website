@@ -5,9 +5,9 @@
     background-color: var(--color-white);
     width: 100%;
     display: flex;
-    padding: var(--padding-base) 0;
+    padding: var(--padding-16px) 0;
     box-sizing: border-box;
-    gap: var(--gap-13xl);
+    gap: var(--gap-32px);
     position: fixed;
     z-index: 2;
 }
@@ -43,8 +43,8 @@
 }
 
 .navbar {
-    padding-left: var(--padding-base);
-    padding-right: var(--padding-base);
+    padding-left: var(--padding-16px);
+    padding-right: var(--padding-16px);
     box-sizing: border-box;
 }
 
@@ -85,7 +85,7 @@
         flex-direction: row;
         align-items: flex-start;
         justify-content: flex-start;
-        gap: var(--gap-base);
+        gap: var(--gap-16px);
     }
 
     .navbar__button-contact-us {

@@ -1,8 +1,8 @@
 .cta-meeting {
     align-self: stretch;
-    padding-bottom: var(--padding-81xl);
-    padding-left: var(--padding-base);
-    padding-right: var(--padding-base);
+    padding-bottom: var(--padding-100px);
+    padding-left: var(--padding-16px);
+    padding-right: var(--padding-16px);
     text-align: center;
     font-size: 4.8rem;
     color: var(--color-white);
@@ -22,7 +22,7 @@
 }
 
 .cta-meeting__card {
-    border-radius: var(--br-base);
+    border-radius: var(--br-16px);
     background: linear-gradient(
         90deg,
         #5d19ff,
@@ -34,11 +34,11 @@
         #008eff
     );
     gap: 3.8rem;
-    padding-left: var(--padding-base);
-    padding-right: var(--padding-base);
+    padding-left: var(--padding-16px);
+    padding-right: var(--padding-16px);
     height: auto;
-    padding-top: var(--padding-29xl);
-    padding-bottom: var(--padding-29xl);
+    padding-top: var(--padding-48px);
+    padding-bottom: var(--padding-48px);
 }
 
 .cta-meeting__card,
@@ -55,8 +55,8 @@
 @media screen and (min-width: 720px) {
 
     .cta-meeting {
-        padding-left: var(--padding-xl);
-        padding-right: var(--padding-xl);
+        padding-left: var(--padding-20px);
+        padding-right: var(--padding-20px);
     }
 
     .cta-meeting__button {

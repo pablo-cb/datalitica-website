@@ -1,6 +1,6 @@
 .section4 {
     width: auto;
-    margin-top: var(--margin-medium);
+    margin-top: var(--margin-100px);
     align-self: stretch;
     justify-content: center;
     color: var(--color-white);
@@ -47,10 +47,10 @@
     align-self: stretch;
     background-color: var(--dark-base);
     overflow: hidden;
-    padding-top: var(--padding-131xl);
+    padding-top: var(--padding-150px);
     padding-bottom: 25rem;
-    padding-left: var(--padding-base);
-    padding-right: var(--padding-base);
+    padding-left: var(--padding-16px);
+    padding-right: var(--padding-16px);
     align-items: center;
     justify-content: center;
     position: relative;
@@ -83,7 +83,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: var(--gap-base);
+    gap: var(--gap-16px);
 }
 
 
@@ -93,7 +93,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: var(--gap-xl);
+    gap: var(--gap-20px);
     /* opacity: 0; */
     color: var(--dark-base);
 }
@@ -105,26 +105,26 @@
     min-height: 30%;
     max-height: 100%;
     overflow: hidden;
-    border-radius: var(--br-3xs) var(--br-3xs) 0 0;
+    border-radius: var(--br-10px) var(--br-10px) 0 0;
 }
 
 .about-us__card-text-block {
     align-self: stretch;
-    border-radius: 0 0 var(--br-3xs) var(--br-3xs);
+    border-radius: 0 0 var(--br-10px) var(--br-10px);
     background-color: var(--color-white);
     overflow: hidden;
-    padding-top: var(--padding-13xl);
-    padding-bottom: var(--padding-13xl);
-    padding-left: var(--padding-base);
-    padding-right: var(--padding-base);
-    gap: var(--gap-base);
+    padding-top: var(--padding-32px);
+    padding-bottom: var(--padding-32px);
+    padding-left: var(--padding-16px);
+    padding-right: var(--padding-16px);
+    gap: var(--gap-16px);
     align-items: flex-start;
     justify-content: flex-start;
 }
 
 .about-us__card-titles {
     align-self: stretch;
-    gap: var(--gap-9xs);
+    gap: var(--gap-4px);
 }
 
 .about-us__card-position {
@@ -135,14 +135,14 @@
 
 
 .clients {
-    border-radius: var(--br-base);
+    border-radius: var(--br-16px);
     background-color: var(--color-white);
     box-shadow: 1px 0 14px rgba(0, 35, 64, 0.12);
     width: 108rem;
-    padding: var(--padding-29xl) 4rem;
+    padding: var(--padding-48px) 4rem;
     box-sizing: border-box;
     justify-content: flex-start;
-    gap: var(--gap-45xl);
+    gap: var(--gap-64px);
     z-index: 0;
     margin-top: -15rem;
     text-align: center;
@@ -164,7 +164,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    gap: var(--padding-13xl);
+    gap: var(--padding-32px);
     overflow: hidden;
 }
 
@@ -186,8 +186,8 @@
 @media screen and (min-width: 720px) {
 
     .about-us {
-        padding-left: var(--padding-xl);
-        padding-right: var(--padding-xl);
+        padding-left: var(--padding-20px);
+        padding-right: var(--padding-20px);
     }
     .about-us__text-block {
         width: 53rem;
@@ -222,8 +222,8 @@
 
 
     .about-us__card-text-block {
-        padding-left: var(--padding-xl);
-        padding-right: var(--padding-xl);
+        padding-left: var(--padding-20px);
+        padding-right: var(--padding-20px);
     }
 
 }

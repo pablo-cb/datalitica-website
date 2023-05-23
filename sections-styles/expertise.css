@@ -1,7 +1,7 @@
 .expertise {
     display: flex;
     align-self: stretch;
-    padding: var(--padding-81xl) 0;
+    padding: var(--padding-100px) 0;
     text-align: center;
     justify-content: center;
 }
@@ -15,7 +15,7 @@
     border-radius: 0;
     background-color: rgba(231, 233, 234, 0.4);
     overflow: hidden;
-    padding: var(--padding-81xl) var(--padding-base);
+    padding: var(--padding-100px) var(--padding-16px);
     position: relative;
     gap: 1rem;
     width: auto;
@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: var(--gap-13xl);
+    gap: var(--gap-32px);
     color: var(--dark-base);
 }
 
@@ -65,20 +65,20 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: var(--gap-base);
+    gap: var(--gap-16px);
 }
 .expertise__card {
     flex: 1;
-    border-radius: var(--br-3xs);
+    border-radius: var(--br-10px);
     background-color: var(--color-white);
-    padding: var(--padding-13xl) var(--padding-xl);
-    gap: var(--gap-lg);
+    padding: var(--padding-32px) var(--padding-20px);
+    gap: var(--gap-18px);
 }
 
 .expertise__cards-container {
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--gap-xl);
+    gap: var(--gap-20px);
     text-align: left;
 }
 .expertise__cards-container,
@@ -119,13 +119,13 @@
 @media screen and (min-width: 720px) {
 
     .expertise {
-        padding-left: var(--padding-xl);
-        padding-right: var(--padding-xl);
+        padding-left: var(--padding-20px);
+        padding-right: var(--padding-20px);
     }
 
     .expertise__container {
-        padding: var(--padding-131xl) 2rem;
-        border-radius: var(--br-3xs);
+        padding: var(--padding-150px) 2rem;
+        border-radius: var(--br-10px);
     }
 
     .expertise__text-block {
