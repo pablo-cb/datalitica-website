@@ -1,0 +1,108 @@
+.contact {
+    /* background: green; */
+    width: 100%;
+    /* height: 80vh; */
+    display: flex;
+    justify-content: center;
+    padding: var(--margin-100px) 0;
+    padding-left: var(--padding-16px);
+    padding-right: var(--padding-16px);
+}
+
+.contact__container {
+    /* background-color: pink; */
+    width: 100%;
+    max-width: 108rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-20px);
+}
+
+.contact__form {
+    flex: 1;
+    display: flex;
+    /* background: lightblue; */
+    flex-direction: column;
+    gap: var(--padding-32px);
+}
+
+.contact__image {
+    flex: 1;
+    object-fit: cover;
+    max-width: 100%;
+    height: 50%;
+}
+
+.contact__form-title-n-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-16px);
+}
+
+.contact__form-disclaimer1 {
+    text-align: right;
+}
+
+.contact__form-terms-n-conditions {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-16px);
+    align-items: flex-start;
+}
+
+.contact__form-terms-checkbox {
+    width: 2.4rem;
+    /* height: 2.rem; */
+}
+
+.contact__form-button-n-disclaimer2 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-32px);
+    justify-content: center;
+}
+
+.contact__form-disclaimer2 {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-8px);
+}
+
+.contact__form-disclaimer2-icon{
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: blue;
+}
+
+
+/* _________________________________________________________________________Tablet */
+
+@media screen and (min-width: 390px) {
+
+    .contact__form-button-n-disclaimer2 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+
+/* _________________________________________________________________________Small Laptop */
+
+@media screen and (min-width: 720px) {
+
+    .contact__container {
+        flex-direction: row;
+        gap: var(--gap-20px);
+    }
+
+}
+
+
+/* _________________________________________________________________________Desktop */
+
+@media screen and (min-width: 1200px) {
+
+
+
+}

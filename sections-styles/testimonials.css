@@ -1,10 +1,13 @@
 .testimonials {
+    background-color: transparent;
     display: flex;
     flex-direction: column;
-    padding: var(--padding-150px) 0;
+    margin: var(--padding-150px) 0;
+    /* padding: var(--paddig-150px) 0; */
     justify-content: center;
     gap: var(--gap-64px);
     width: auto;
+    overflow: hidden;
 }
 
 .testimonials__carousel-indicator,

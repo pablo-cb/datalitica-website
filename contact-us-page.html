@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./contact-us-page.css">
+    <link rel="stylesheet" href="./global-styles.css/global.css">
+    <link rel="stylesheet" href="./global-styles.css/buttons.css">
+    <link rel="stylesheet" href="./global-styles.css/font-styles.css">
+    <link rel="stylesheet" href="./sections-styles/navbar.css">
+    <link rel="stylesheet" href="./sections-styles/cta-meeting.css">
+    <link rel="stylesheet" href="./sections-styles/footer.css">
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira Sans:wght@400;500;700&display=swap"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar__elements-container">
+        <button class="navbar__button-logo-home button">
+            <img
+                class="navbar__logo-icon"
+                alt=""
+                src="./public/global/datalitica-logo.svg"
+            />
+        </button>
+
+        <button class="navbar__hamburguer-menu button">
+            <img
+                class="navbar__hamburguer-menu-icon"
+                alt=""
+                src="./public/navbar/icon-hamburguer-menu.svg"
+            />
+        </button>
+
+        <div class="navbar__buttons-container">
+            <button class="navbar__button-contact-us button-secondary button-global-font">
+                Contact Us
+            </button>
+            <button class="navbar-button-schedule button-primary button-global-font">
+                Schedule a Meeting
+            </button>
+        </div>
+        </div>
+        <!-- <div class="index1">
+            <div class="index-container">
+                <a class="index-item1">Services</a>
+                <a class="index-item1">Industries</a>
+                <a class="index-item1">Expertise</a>
+                <a class="index-item1">About Us</a>
+                <a class="index-item1">Clients</a>
+                <div class="navbar-buttons-container1">
+                <button class="navbar-button-outline1">
+                    <div class="contact-us">Contact Us</div>
+                </button>
+                <button class="navbar-button1">
+                    <div class="schedule-a-meeting">Schedule a Meeting</div>
+                </button>
+                </div>
+            </div>
+            </div> -->
+      </div>
+    </header>
+    <main>
+        <section class="contact">
+          <div class="contact__container">
+            <img
+            class="contact__image"
+            alt=""
+            src="./public/hero/four-chess-figures.png"
+            />
+            <form class="contact__form">
+              <div class="contact__form-title-n-text">
+                <h1 class="contact__form-title h1-global-font">Contact Us</h1>
+                <p class="contact__form-text body-global-font">Drop a message, we will be glad to hear about your ideas.</p>
+              </div>
+              <input type="text" class="contact__form-name-field">
+              <input type="text" class="contact__form-email-field">
+              <input type="text" class="contact__form-message-field">
+              <p class="contact__form-disclaimer1 body-global-font">*Required fields</p>
+              <div class="contact__form-terms-n-conditions">
+                <input type="checkbox" class="contact__form-terms-checkbox">
+                <p class="contact__form-terms-text body-global-font">I have read and accepted the Terms & Conditions and Privacy Policy</p>
+              </div>
+              <div class="contact__form-button-n-disclaimer2">
+                <div class="contact__form-disclaimer2">
+                  <div class="contact__form-disclaimer2-icon"></div>
+                  <p class="contact__form-disclaimer2-text body-global-font">Your privacy is protected</p>
+                </div>
+                <button class="contact__form-submit-button button-primary">Send Message</button>
+              </div>
+            </form>
+
+          </div>
+        </section>
+    </main>
+    <section class="cta-meeting">
+      <div class="cta-meeting__card">
+        <h2 class="cta-meeting__title h2-global-font">
+          We’re here to help! Aks us, or schedule a meeting for details
+        </h2>
+        <button class="cta-meeting__button button-global-font button-primary--blue-bg">
+          Schedule a Meeting
+        </button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__left-container">
+          <img
+            class="footer__logo"
+            alt=""
+            src="./public/footer--logo.svg"
+          />
+
+          <h5 class="footer__location h5-global-font">San José, Costa Rica</h5>
+          <a class="footer__terms-conditions-button link-global-font">Terms & Conditions</a>
+          <a class="footer__terms-conditions-button link-global-font">Privacy Policy</a>
+        </div>
+        <div class="footer__right-container">
+          <h3 class="footer__contact-title h3-global-font">Get in touch</h3>
+          <a
+            class="footer__email link-global-font"
+            href="mailto:info@datalitica.com?subject=Hello!"
+            >info@datalitica.com</a
+          >
+          <div class="footer__social-media-icons">
+            <button class="footer__social-media-button">
+              <img
+                class="footer__facebook-button-image-icon"
+                alt=""
+                src="./public/facebook.svg"
+                id="footerFacebookButtonImageIcon"
+              />
+            </button>
+            <button class="footer__social-media-button">
+              <img
+                class="footer__facebook-button-image-icon"
+                alt=""
+                src="./public/linkedin.svg"
+                id="footerLinkedinButtonImageIcon"
+              />
+            </button>
+            <button class="footer__social-media-button">
+              <img
+                class="footer__facebook-button-image-icon"
+                alt=""
+                src="./public/footer--instagrambuttonimage.svg"
+                id="footerInstagramButtonImageIcon"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
