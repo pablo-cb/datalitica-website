@@ -29,7 +29,7 @@
     <header>
       <div class="navbar">
         <div class="navbar__elements-container">
-        <button class="navbar__button-logo-home button">
+        <button class="navbar__button-logo-home button" onclick="window.location.href = 'index.html'">
             <img
                 class="navbar__logo-icon"
                 alt=""
@@ -46,10 +46,11 @@
         </button>
 
         <div class="navbar__buttons-container">
-            <button class="navbar__button-contact-us button-secondary button-global-font">
+            <button class="navbar__button-contact-us button-secondary button-global-font" onclick="window.location.href = 'contact-us-page.html'">
                 Contact Us
             </button>
-            <button class="navbar-button-schedule button-primary button-global-font">
+            <button class="navbar-button-schedule button-primary button-global-font" 
+            onclick="window.open('https://calendly.com/rquesada-ak/30min?month=2023-05', '_blank')">
                 Schedule a Meeting
             </button>
         </div>
@@ -79,16 +80,25 @@
             <img
             class="contact__image"
             alt=""
-            src="./public/hero/four-chess-figures.png"
+            src="./public/contact-us-image.png"
             />
             <form class="contact__form">
               <div class="contact__form-title-n-text">
                 <h1 class="contact__form-title h1-global-font">Contact Us</h1>
                 <p class="contact__form-text body-global-font">Drop a message, we will be glad to hear about your ideas.</p>
               </div>
-              <input type="text" class="contact__form-name-field">
-              <input type="text" class="contact__form-email-field">
-              <input type="text" class="contact__form-message-field">
+              <div class="contact__form-name-field">
+                <label for="your-name" class="label-global-font">Full Name*</label>
+                <input type="text" class="contact__form-name-input body-global-font" id="your-name" placeholder="Name">
+              </div>
+              <div class="contact__form-email-field">
+                <label for="your-email" class="label-global-font">Business Email*</label>
+                <input type="text" class="contact__form-email-input body-global-font" id="your-email" placeholder="Email">
+              </div>
+              <div class="contact__form-message-field">
+                <label for="your-message" class="label-global-font">Message*</label>
+                <textarea type="text" class="contact__form-message-input body-global-font" id="your-message" placeholder="Write your message"></textarea>
+              </div>
               <p class="contact__form-disclaimer1 body-global-font">*Required fields</p>
               <div class="contact__form-terms-n-conditions">
                 <input type="checkbox" class="contact__form-terms-checkbox">
@@ -111,7 +121,7 @@
         <h2 class="cta-meeting__title h2-global-font">
           We’re here to help! Aks us, or schedule a meeting for details
         </h2>
-        <button class="cta-meeting__button button-global-font button-primary--blue-bg">
+        <button class="cta-meeting__button button-global-font button-primary--blue-bg" onclick="window.open('https://calendly.com/rquesada-ak/30min?month=2023-05', '_blank')">
           Schedule a Meeting
         </button>
       </div>

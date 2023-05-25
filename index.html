@@ -35,7 +35,7 @@
     <header>
       <div class="navbar">
         <div class="navbar__elements-container">
-        <button class="navbar__button-logo-home button">
+        <button class="navbar__button-logo-home button" onclick="window.location.href = 'index.html'">
             <img
                 class="navbar__logo-icon"
                 alt=""
@@ -52,10 +52,11 @@
         </button>
 
         <div class="navbar__buttons-container">
-            <button class="navbar__button-contact-us button-secondary button-global-font">
+            <button class="navbar__button-contact-us button-secondary button-global-font" onclick="window.location.href = 'contact-us-page.html'">
                 Contact Us
             </button>
-            <button class="navbar-button-schedule button-primary button-global-font">
+            <button class="navbar-button-schedule button-primary button-global-font" 
+            onclick="window.open('https://calendly.com/rquesada-ak/30min?month=2023-05', '_blank')">
                 Schedule a Meeting
             </button>
         </div>
@@ -104,8 +105,8 @@
           <li><a class="index-item button-tertiary button-global-font" href="#services">Services</a></li>
           <li></li><a class="index-item button-tertiary button-global-font" href="#industries">Industries</a></li>
           <li></li><a class="index-item button-tertiary button-global-font" href="#expertise">Expertise</a></li>
-          <li></li><a class="index-item button-tertiary button-global-font">About Us</a></li>
-          <li></li><a class="index-item button-tertiary button-global-font">Clients</a></li>
+          <li></li><a class="index-item button-tertiary button-global-font" href="#about-us">About Us</a></li>
+          <li></li><a class="index-item button-tertiary button-global-font" href="#testimonials">Clients</a></li>
         </ul>
     </section>
     <section class="services" id="services">
@@ -569,7 +570,7 @@
         </div>
       </div>
     </section>
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <h2 class="testimonials__title h2-global-font">What our Partners says</h2>
       <div class="testimonials__carousel">
         <div class="testimonials__carousel-items">
@@ -672,7 +673,8 @@
         <h2 class="cta-meeting__title h2-global-font">
           We’re here to help! Aks us, or schedule a meeting for details
         </h2>
-        <button class="cta-meeting__button button-global-font button-primary--blue-bg">
+        <button class="cta-meeting__button button-global-font button-primary--blue-bg"
+        onclick="window.open('https://calendly.com/rquesada-ak/30min?month=2023-05', '_blank')">
           Schedule a Meeting
         </button>
       </div>

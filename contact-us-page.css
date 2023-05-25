@@ -4,9 +4,11 @@
     /* height: 80vh; */
     display: flex;
     justify-content: center;
-    padding: var(--margin-100px) 0;
+    /* margin-top: 6rem; */
+    padding: var(--padding-100px) 0;
     padding-left: var(--padding-16px);
     padding-right: var(--padding-16px);
+    color: var(--dark-base);
 }
 
 .contact__container {
@@ -18,8 +20,19 @@
     gap: var(--gap-20px);
 }
 
-.contact__form {
+.contact__form-title-n-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.contact__form,
+.contact__image {
+    align-self: stretch;
     flex: 1;
+}
+
+.contact__form {
     display: flex;
     /* background: lightblue; */
     flex-direction: column;
@@ -27,17 +40,12 @@
 }
 
 .contact__image {
-    flex: 1;
     object-fit: cover;
     max-width: 100%;
-    height: 50%;
+    height: 65%;
+    overflow: hidden;
 }
 
-.contact__form-title-n-text {
-    display: flex;
-    flex-direction: column;
-    gap: var(--padding-16px);
-}
 
 .contact__form-disclaimer1 {
     text-align: right;
@@ -74,6 +82,31 @@
     background-color: blue;
 }
 
+.contact__form-name-field,
+.contact__form-email-field,
+.contact__form-message-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-4px);
+}
+.contact__form-name-input::placeholder,
+.contact__form-email-input::placeholder,
+.contact__form-message-input::placeholder {
+    color: rgba(0, 35, 64, 0.3);
+}
+
+.contact__form-name-input,
+.contact__form-email-input,
+.contact__form-message-input {
+    color: var(--dark-base);
+    padding: var(--padding-8px);
+    border: 1px solid var(--dark-base);
+    border-radius: 8px;
+}
+
+.contact__form-message-input {
+    min-height: 10rem;
+}
 
 /* _________________________________________________________________________Tablet */
 
@@ -96,13 +129,16 @@
         gap: var(--gap-20px);
     }
 
+    .contact__form,
+    .contact__image {
+        align-self: center;
+    }
+
 }
 
 
 /* _________________________________________________________________________Desktop */
 
 @media screen and (min-width: 1200px) {
-
-
 
 }
