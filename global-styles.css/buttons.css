@@ -39,4 +39,14 @@
 .icon-button {
     background-color: transparent;
     padding: var(--padding-10px);
-  }
+}
+
+.submit-button {
+    border: 0;
+    padding: var(--padding-8px) var(--padding-16px);
+    background-color: var(--primary);
+    border-radius: var(--br-4px);
+    display: flex;
+    justify-content: center;
+    color: var(--color-white);
+}

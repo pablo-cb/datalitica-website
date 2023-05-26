@@ -100,16 +100,21 @@
                 <textarea type="text" class="contact__form-message-input body-global-font" id="your-message" placeholder="Write your message"></textarea>
               </div>
               <p class="contact__form-disclaimer1 body-global-font">*Required fields</p>
-              <div class="contact__form-terms-n-conditions">
+              <label class="contact__form-terms-n-conditions-checkbox body-global-font">
                 <input type="checkbox" class="contact__form-terms-checkbox">
-                <p class="contact__form-terms-text body-global-font">I have read and accepted the Terms & Conditions and Privacy Policy</p>
-              </div>
+                <span class="contact__form-terms-checkmark"></span>
+                <span class="contact__form-terms-checkbox-label body-global-font">I have read and accepted the Terms & Conditions and Privacy Policy</span>
+              </label>                
               <div class="contact__form-button-n-disclaimer2">
                 <div class="contact__form-disclaimer2">
-                  <div class="contact__form-disclaimer2-icon"></div>
+                  <img
+                  class="contact__form-disclaimer2-icon"
+                  alt=""
+                  src="./public/contact-us-shield.svg"
+                  />
                   <p class="contact__form-disclaimer2-text body-global-font">Your privacy is protected</p>
                 </div>
-                <button class="contact__form-submit-button button-primary">Send Message</button>
+                <button class="contact__form-submit-button button-global-font submit-button">Send Message</button>
               </div>
             </form>
 

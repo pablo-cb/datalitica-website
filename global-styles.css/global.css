@@ -101,10 +101,11 @@ form {
   --margin-100px: 10rem;
 
   /* border radiuses */
-  --br-16px: 1.6rem;
+  --br-4px: 0.4rem;
   --br-7px: 0.7rem;
   --br-8px: 0.8rem;
   --br-10px: 1rem;
+  --br-16px: 1.6rem;
   --br-55px: 5.5rem;
   --br-500px: 50rem;
 }
