@@ -98,7 +98,7 @@
 }
 
 .about-us__card-image {
-    flex: 1;
+    /* flex: 1; */
     min-width: 100%;
     max-width: 100%;
     min-height: 30%;
