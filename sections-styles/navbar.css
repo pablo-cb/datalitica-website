@@ -1,3 +1,14 @@
+header {
+    z-index: 10;
+}
+
+.navbar-container.active {
+    background-color: rgba(0, 35, 64, 0.7);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
 .navbar {
     top: 0;
     flex-direction: column;
@@ -10,28 +21,47 @@
     box-sizing: border-box;
     gap: var(--gap-32px);
     position: fixed;
-    z-index: 2;
+    z-index: 6;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.active {
+    background-color: var(--dark-base);
+
 }
 
 .navbar__elements-container {
-    width: 108rem;
+    max-width: 108rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
     gap: var(--gap-0);
-    align-self: stretch;
-    width: auto;
 }
 
-.navbar__logo-icon {
-    position: relative;
-    width: 17.42rem;
-    height: 3.2rem;
+.navbar__logo-icon-dark,
+.navbar__logo-icon-white {
+  position: relative;
+  width: 17.42rem;
+  height: 3.2rem;
 }
 
-.navbar__hamburguer-menu-icon {
+.navbar__logo-icon-white {
+  display: none; /* Initially hide the white logo */
+}
+
+.navbar__button-logo-home.active .navbar__logo-icon-dark {
+  display: none; /* Hide the dark logo on hover */
+}
+
+.navbar__button-logo-home.active .navbar__logo-icon-white {
+  display: inline-block; /* Display the white logo on hover */
+}
+
+
+.navbar__hamburger-menu-icon {
+    display: flex;
     position: relative;
     width: 2.4rem;
     height: 2.4rem;
@@ -39,26 +69,94 @@
     flex-shrink: 0;
 }
 
+.navbar__hamburger-menu button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-base);
+    border: none;
+    padding: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+}
+
+.navbar__hamburger-menu.active button::before,
+.navbar__hamburger-menu.active button::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-white);
+    width: 70%;
+    height: 3px;
+    transition: all 0.3s ease;
+}
+
+.navbar__hamburger-menu.active button::before {
+    transform: rotate(45deg) translate(0, -50%);
+}
+
+.navbar__hamburger-menu.active button::after {
+    transform: rotate(-45deg) translate(0, 50%);
+}
+
+.navbar__hamburger-menu .navbar__hamburger-menu-icon-close {
+    display: none;
+}
+.navbar__hamburger-menu.active .navbar__hamburger-menu-icon-close {
+    display: block;
+}
+
+.navbar__hamburger-menu.active .navbar__hamburger-menu-icon {
+    display: none;
+}
+
 .navbar__buttons-container {
     display: none;
+}
+
+.navbar__button-cta {
+    width: 100%;
 }
 
 .navbar {
     padding-left: var(--padding-16px);
     padding-right: var(--padding-16px);
-    box-sizing: border-box;
 }
 
-.navbar__hamburguer-menu-icon {
+.index-mobile {
+    display: none;
+    background-color: var(--dark-base);
+}
+
+.index-mobile.active {
     display: flex;
+    width: 100%;
 }
 
+.index-mobile__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-32px);
+    width: 100%;
+    padding-bottom: var(--padding-48px);
+}
+
+.index-mobile__item {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+}
 
 /* _________________________________________________________________________Tablet */
 
 @media screen and (min-width: 390px) {
 
-
+    .navbar__button-cta {
+        width: 25rem;
+    }
+    .index-mobile__container {
+        align-items: center;
+    }
 
 }
 
@@ -68,48 +166,29 @@
 
 
 @media screen and (min-width: 720px) {
-
-    .navbar {
-        box-sizing: border-box;
-    }
-
-    .navbar {
-        padding: 1rem 2rem;
-    }
-
-    .navbar__hamburguer-menu {
-        display: none;
-    }
-
     .navbar__buttons-container {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: flex-start;
         gap: var(--gap-16px);
+        justify-content: space-between;
+        width: 41.6rem;
     }
 
-    .navbar__button-contact-us {
-        width: 20rem;
+    .navbar__hamburger-menu {
+        display: none;
     }
-    
-    .navbar-button-schedule {
-        width: 20rem;
-    }
-
-
 
 }
 
 /* _________________________________________________________________________Desktop */
 
-@media screen and (min-width: 1200px) {
-
-
-    .navbar__elements-container{
-        align-self: center;
-        width: 108rem;
+@media screen and (min-width: 720px) {
+    .index-mobile {
+        display: none;
     }
 
-} 
-
+    .navbar__buttons-container {
+        display: flex;
+    }
+}

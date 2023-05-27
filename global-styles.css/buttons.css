@@ -28,6 +28,16 @@
     color: var(--primary);
 }
 
+.button-secondary--blue-bg {
+    border: 2px solid var(--color-white);
+    padding: var(--padding-6px) var(--padding-16px);
+    background-color: transparent;
+    border-radius: var(--br-55px);
+    display: flex;
+    justify-content: center;
+    color: var(--color-white);
+}
+
 .button-tertiary {
     padding: var(--padding-10px) var(--padding-10px);
     border-radius: var(--br-55px);

@@ -43,3 +43,24 @@ var observer = new IntersectionObserver(
 for (let i = 0; i < scrollAnimElements.length; i++) {
 observer.observe(scrollAnimElements[i]);
 }
+
+
+function toggleMenu() {
+    const menuContainer = document.querySelector(".index-mobile");
+    const hamburgerButton = document.querySelector(".navbar__hamburger-menu");
+    const navbarColor = document.querySelector(".navbar");
+    const overlayColor = document.querySelector(".navbar-container");
+    const changeLogoColor = document.querySelector(".navbar__button-logo-home");
+
+    menuContainer.classList.toggle("active");
+    hamburgerButton.classList.toggle("active");
+    navbarColor.classList.toggle("active");
+    overlayColor.classList.toggle("active");
+    changeLogoColor.classList.toggle("active");
+}
+
+const indexMobileItems = document.querySelectorAll(".index-mobile__item");
+indexMobileItems.forEach(item => {
+    item.addEventListener('click', toggleMenu);
+});
+indexMobile.addEventListener('click',toggleMenu);

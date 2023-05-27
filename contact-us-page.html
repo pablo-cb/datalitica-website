@@ -26,53 +26,44 @@
     />
   </head>
   <body>
-    <header>
+    <header class="navbar-container">
       <div class="navbar">
         <div class="navbar__elements-container">
-        <button class="navbar__button-logo-home button" onclick="window.location.href = 'index.html'">
-            <img
-                class="navbar__logo-icon"
-                alt=""
-                src="./public/global/datalitica-logo.svg"
-            />
-        </button>
-
-        <button class="navbar__hamburguer-menu button">
-            <img
-                class="navbar__hamburguer-menu-icon"
-                alt=""
-                src="./public/navbar/icon-hamburguer-menu.svg"
-            />
-        </button>
-
-        <div class="navbar__buttons-container">
-            <button class="navbar__button-contact-us button-secondary button-global-font" onclick="window.location.href = 'contact-us-page.html'">
-                Contact Us
+          <button class="navbar__button-logo-home button" onclick="window.location.href = 'index.html'">
+            <img class="navbar__logo-icon-dark" alt="" src="./public/global/datalitica-logo.svg" />
+            <img class="navbar__logo-icon-white" alt="" src="./public/footer--logo.svg" />
+          </button>    
+      
+          <button class="navbar__hamburger-menu button" onclick="toggleMenu()">
+            <img class="navbar__hamburger-menu-icon" alt="" src="./public/navbar/icon-hamburguer-menu.svg" />
+            <img class="navbar__hamburger-menu-icon-close" alt="" src="./public/navbar/navbar__hamburguer-menu-close.svg" />
+          </button>
+      
+          <div class="navbar__buttons-container">
+            <button class="navbar__button-cta button-secondary button-global-font" onclick="window.location.href = 'contact-us-page.html'">
+              Contact Us
             </button>
-            <button class="navbar-button-schedule button-primary button-global-font" 
-            onclick="window.open('https://calendly.com/rquesada-ak/30min?month=2023-05', '_blank')">
-                Schedule a Meeting
+            <button class="navbar__button-cta button-primary button-global-font" onclick="window.open('https://calendly.com/rquesada-ak/30min?month=2023-05', '_blank')">
+              Schedule a Meeting
             </button>
+          </div>
         </div>
+        <div class="index-mobile">
+          <ul class="index-mobile__container">
+            <li><a class="index-mobile__item button-tertiary button-global-font"  href="/index.html#services">Services</a></li>
+            <li><a class="index-mobile__item button-tertiary button-global-font" href="/index.html#industries">Industries</a></li>
+            <li><a class="index-mobile__item button-tertiary button-global-font" href="/index.html#expertise">Expertise</a></li>
+            <li><a class="index-mobile__item button-tertiary button-global-font" href="/index.html#about-us">About Us</a></li>
+            <li><a class="index-mobile__item button-tertiary button-global-font" href="/index.html#testimonials">Clients</a></li>
+            <li><button class="navbar__button-cta button-secondary--blue-bg button-global-font" onclick="window.location.href = 'contact-us-page.html'">
+              Contact Us
+            </button></li>
+            <li><button class="navbar__button-cta button-primary button-global-font" onclick="window.open('https://calendly.com/rquesada-ak/30min?month=2023-05', '_blank')">
+              Schedule a Meeting
+            </button></li>
+          </ul>
         </div>
-        <!-- <div class="index1">
-            <div class="index-container">
-                <a class="index-item1">Services</a>
-                <a class="index-item1">Industries</a>
-                <a class="index-item1">Expertise</a>
-                <a class="index-item1">About Us</a>
-                <a class="index-item1">Clients</a>
-                <div class="navbar-buttons-container1">
-                <button class="navbar-button-outline1">
-                    <div class="contact-us">Contact Us</div>
-                </button>
-                <button class="navbar-button1">
-                    <div class="schedule-a-meeting">Schedule a Meeting</div>
-                </button>
-                </div>
-            </div>
-            </div> -->
-      </div>
+      </div>      
     </header>
     <main>
         <section class="contact">
