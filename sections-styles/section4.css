@@ -1,6 +1,5 @@
 .section4 {
     width: auto;
-    margin-top: var(--margin-100px);
     align-self: stretch;
     justify-content: center;
     color: var(--color-white);
@@ -22,8 +21,8 @@
 .about-us__bg-image-icon {
     position: absolute;
     margin: 0;
-    top: 0;
-    left: 118.2rem;
+    top: -135rem;
+    margin-left: 23rem;
     width: 103.9rem;
     height: 145.21rem;
     object-fit: cover;
@@ -72,8 +71,7 @@
 }
 
 .about-us__card {
-    flex: unset;
-    /* align-self: stretch; */
+    flex: 1;
 }
 
 .about-us__text-block {
@@ -92,34 +90,33 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
     gap: var(--gap-20px);
-    /* opacity: 0; */
     color: var(--dark-base);
 }
 
 .about-us__card-image {
-    /* flex: 1; */
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 30%;
-    max-height: 100%;
+    width: 100%;
+    height: auto;
     overflow: hidden;
+    object-fit: cover;
     border-radius: var(--br-10px) var(--br-10px) 0 0;
 }
 
 .about-us__card-text-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     align-self: stretch;
     border-radius: 0 0 var(--br-10px) var(--br-10px);
     background-color: var(--color-white);
     overflow: hidden;
-    padding-top: var(--padding-32px);
-    padding-bottom: var(--padding-32px);
-    padding-left: var(--padding-16px);
-    padding-right: var(--padding-16px);
+    padding: var(--padding-32px) var(--padding-16px);
     gap: var(--gap-16px);
     align-items: flex-start;
     justify-content: flex-start;
 }
+
 
 .about-us__card-titles {
     align-self: stretch;
@@ -174,36 +171,47 @@
     object-fit: cover;
 }
 
-  
+
+
+/* _________________________________________________________________________Tablet */
   
 @media screen and (min-width: 390px) {
 
 
 }
 
+/* _________________________________________________________________________Small Laptop */
 
 @media screen and (min-width: 720px) {
+
+    .section4 {
+        margin-top: var(--margin-100px);
+    }
 
     .about-us {
         padding-left: var(--padding-20px);
         padding-right: var(--padding-20px);
     }
+
+    .about-us__bg-image-icon {
+        top: 0;
+        left: 50%;
+    }
+
     .about-us__text-block {
         width: 53rem;
     }
 
     .about-us__cards {
         flex-direction: row;
-        /* flex: unset; */
+        align-items: stretch;
     }
+    
 
     .about-us__card {
-        flex: 1;
-        /* align-self: stretch; */
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 0%;
+        flex-basis: calc(50% - var(--gap-20px)); /* Two cards per row */
     }
+
     .about-us__card-image {
         position: relative;
         object-fit: cover;
@@ -226,6 +234,9 @@
     }
 
 }
+
+
+/* _________________________________________________________________________Desktop */
 
 @media screen and (min-width: 1200px) {
 
