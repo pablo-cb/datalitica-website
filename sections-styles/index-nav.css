@@ -1,8 +1,9 @@
 .index {
     background-color: var(--dark-base);
     position: sticky;
-    top: 6rem;
+    top: 7.2rem;
     width: 100%;
+    height: 7.2rem;
     z-index: 5;
     color: var(--accent-turquoise);
     display: none;
@@ -36,7 +37,7 @@
 
     .index {
         display: flex;
-        padding: 1rem 2rem;
+        padding: 0 2rem;
     }
 
     .index-container {

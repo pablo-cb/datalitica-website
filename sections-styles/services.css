@@ -96,6 +96,7 @@
   gap: var(--gap-20px);
 }
 
+
 @media screen and (min-width: 720px) {
 
   .services {
