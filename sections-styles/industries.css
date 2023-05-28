@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 .industries__container {
@@ -60,14 +61,17 @@
 .industries__bg-image-icon {
     position: absolute;
     margin: 0;
-    top: calc(50% - 341.5px);
-    left: calc(50% + 540px);
-    width: 72.2rem;
-    height: 72.5rem;
+    top: 10vh;
+    left: 80vw;
+    /* width: 72.2rem;
+    height: 72.5rem; */
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
     z-index: 0;
-    display: none;
+    /* display: none; */
 }
+
 
 @media screen and (min-width: 720px) {
 
@@ -84,12 +88,28 @@
         width: 18%;
     }
 
+    .industries__bg-image-icon {
+        top: 15vh;
+        left: 75vw;
+        width: 50rem;
+        height: 50rem;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
 
     .industries__container {
         width: 108rem;
+    }
+
+    .industries__bg-image-icon {
+        top: 50%;
+        width: 72.2rem;
+        height: 72.5rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 850px;
     }
 
 } 
