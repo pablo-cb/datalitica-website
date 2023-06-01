@@ -33,40 +33,34 @@
 .testimonials__carousel-items {
     /* width: 108rem; */
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-32px);
-    align-self: stretch;
+    /* justify-content: flex-start; */
+    /* gap: var(--gap-32px); */
+    /* align-self: stretch; */
     width: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .testimonials__carousel-items-holder.animate {
     animation: 1s ease 0s 1 normal forwards scale-up;
 }
 
-/* _______________________________________________________________  Cards container */
-
-.testimonials__carousel-items-holder {
-    flex: 1;
+.testimonials__carousel-window {
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-16px);
-    opacity: 1;
-    width: auto;
-    max-width: 108rem;
+    width: 800px;
 }
 
+/* _______________________________________________________________  Cards container */
 
-
-  /* .testimonials__carousel-items-holder {
-    flex: 1;
-    height: auto;
-  } */
+.testimonials__carousel-items-holder { /* Holds  */
+    justify-content: flex-start;
+    left: 0;
+    width: 2000px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    gap:var(--gap-32px);
+}
 
 .testimonials__carousel-left-button-desktop,
 .testimonials__carousel-right-button-desktop {
@@ -83,24 +77,13 @@
 /* _______________________________________________________________  Card / item */
 
 
-/* .testimonials__carousel-item {
-flex: 1;
-} */
-
 .testimonials__carousel-item {
-    flex: 1;
+    /* flex: 1; */
     border-radius: var(--br-10px);
     background-color: var(--color-aqua-100);
     padding: var(--padding-32px) var(--padding-20px);
     gap: var(--gap-18px);
-}
-
-.testimonials__carousel-item {
-    flex: 1;
-    border-radius: var(--br-10px);
-    background-color: var(--color-aqua-100);
-    padding: var(--padding-32px) var(--padding-20px);
-    gap: var(--gap-18px);
+    width: 200px;
 }
 
 .testimonials__carousel-item-text-block {
@@ -166,7 +149,12 @@ flex: 1;
   box-sizing: border-box;
 }
 
+/* _________________________________________________________________________Tablet */
 
+@media screen and (min-width: 720px) {}
+
+
+/* _________________________________________________________________________Small Laptop */
 @media screen and (min-width: 720px) {
 
     .testimonials {
@@ -201,9 +189,9 @@ flex: 1;
 
     /* _______________________________________________________________  Cards container */
 
-    .testimonials__carousel-items-holder {
+    /* .testimonials__carousel-items-holder {
         gap: var(--gap-20px);
-    }
+    } */
 
     /* _______________________________________________________________ Carousel Indicator Components */
 
@@ -218,6 +206,9 @@ flex: 1;
     }
 
 }
+
+
+/* _________________________________________________________________________Desktop */
 
 @media screen and (min-width: 1200px) {
 
