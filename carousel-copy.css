@@ -1,15 +1,13 @@
-/*
-
 /* _______________________________________________________________  Section */
 
 .testimonials {
     display: flex;
     flex-direction: column;
     gap: var(--gap-32px);
-    padding-left: var(--padding-16px);
+    /* padding-left: var(--padding-16px); */
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .testimonials__title {
@@ -19,49 +17,51 @@
 /* _______________________________________________________________  Carousel container with All Buttons and the indicator */
 
 .testimonials__carousel {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-64px);
-    width: 100%;
-    max-width: 108rem;
+    max-width: 108em;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 /* _______________________________________________________________  Carousel container with left and right Buttons */
 
 .testimonials__carousel-items {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -20px;
+    padding: 0 20px;
 }
 
-/* _______________________________________________________________  Items/testimonials/card Container */
-
+.testimonials__carousel-left-button-desktop,
+.testimonials__carousel-right-button-desktop {
+    display: none;
+}
 
 .testimonials__carousel-items-window {
     width: 100%;
-    overflow: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 0 20px;
 }
 
 .testimonials__carousel-items-holder {
-    position: relative;
-    /* left: -500px; */
     display: flex;
-    flex-direction: row;
-    width: auto;
-    /* width: 2000px; */
+    gap: 20px;
     flex-wrap: nowrap;
-    gap: var(--gap-20px);
+    overflow: auto;
 }
 
-
 /* _______________________________________________________________  Card / item */
+
 .testimonials__carousel-item {
     /* flex: 1; */
     border-radius: var(--br-10px);
     background-color: var(--color-aqua-100);
     padding: var(--padding-32px) var(--padding-20px);
     gap: var(--gap-18px);
-    width: calc(33.3vw - 172px);
+    /* width: calc(33.3vw - 172px); */
+    flex: 0 0 calc(50% - 20px);
+    flex-shrink: 0;
 }
 
 .testimonials__carousel-item-text-block {
@@ -89,37 +89,54 @@
     align-self: stretch;
     gap: var(--gap-16px);
 }
-/* __________________________________________________________________________________________________________________________tablet */
 
+
+/* _______________________________________________________________________________________________Tablet */
 
 @media screen and (min-width: 390px) {
-
-}
-
-
-/* __________________________________________________________________________________________________________________________Small Laptop */
-
-
-@media screen and (min-width: 720px) {
-
-
-    /* _______________________________________________________________  Section */
-
-    .testimonials {
-        padding-left: var(--padding-20px);
-        padding-right: var(--padding-20px);
+    .testimonials__carousel-items-window {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
     }
 }
 
 
-/* __________________________________________________________________________________________________________________________Desktop */
 
+/* _______________________________________________________________________________________________Small Laptop */
+@media screen and (min-width: 720px) {
+
+    .testimonials__carousel-items-window {
+        scroll-snap-type: x mandatory;
+        scroll-padding: 0 20px;
+    }
+
+    .testimonials__carousel-item {
+        scroll-snap-align: start;
+    }
+
+    .testimonials__carousel-item {
+        flex: 0 0 calc(33.3% - 20px);
+    }
+
+    .testimonials__carousel-left-button-desktop,
+    .testimonials__carousel-right-button-desktop {
+    display: block;
+    }
+
+}
+
+
+/* _______________________________________________________________________________________________Desktop */
 
 @media screen and (min-width: 1200px) {
 
-    /* _______________________________________________________________  Card / item */
-    .testimonials__carousel-item {
-        min-width: 31.6rem;
+    .testimonials__carousel {
+        margin: 0 20rem;
+        align-self: center;
     }
 
+    .testimonials__carousel-items {
+        margin: 0;
+    }
 }
