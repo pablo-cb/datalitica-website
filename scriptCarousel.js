@@ -36,8 +36,12 @@ testimonialsList.push({
 });
 
 
+
+//  ______________________________________________________________________________________ Builds the testimonial cards
+
+const carouselItemsHolder = document.querySelector('.testimonials__carousel-items-holder');
+
 function buildTestimonials(testimonials) {
-    const carouselItemsHolder = document.querySelector('.testimonials__carousel-items-holder');
     
     testimonials.forEach(testimonial => {
         // Create testimonial item container
@@ -81,11 +85,10 @@ function buildTestimonials(testimonials) {
 
 buildTestimonials(testimonialsList);
 
+//  ______________________________________________________________________________________ Carousel Buttons
 
-// ________________
 
 const carouselItemsWindow = document.querySelector('.testimonials__carousel-items-window');
-const carouselItemsHolder = document.querySelector('.testimonials__carousel-items-holder');
 const carouselItems = Array.from(document.querySelectorAll('.testimonials__carousel-item'));
 
 const leftButton = document.querySelector('.testimonials__carousel-left-button-desktop');
@@ -97,24 +100,27 @@ const scrollAmount = itemWidth * 3;
 let scrollPosition = 0;
 
 leftButton.addEventListener('click', () => {
-  scrollPosition -= scrollAmount;
-  if (scrollPosition < 0) {
-    scrollPosition = 0;
-  }
-  carouselItemsWindow.scrollTo({
-    left: scrollPosition,
-    behavior: 'smooth'
-  });
+    console.log(scrollAmount + " click izquierdo");
+    
+    scrollPosition -= scrollAmount;
+    if (scrollPosition < 0) {
+        scrollPosition = 0;
+    }
+    carouselItemsWindow.scrollTo({
+        left: scrollPosition,
+        behavior: 'smooth'
+    });
 });
 
 rightButton.addEventListener('click', () => {
-  scrollPosition += scrollAmount;
-  if (scrollPosition > carouselItemsHolder.offsetWidth - carouselItemsWindow.offsetWidth) {
-    scrollPosition = carouselItemsHolder.offsetWidth - carouselItemsWindow.offsetWidth;
-  }
-  carouselItemsWindow.scrollTo({
-    left: scrollPosition,
-    behavior: 'smooth'
-  });
+    console.log(scrollAmount + " click derecho");
+    scrollPosition += scrollAmount;
+    if (scrollPosition > carouselItemsHolder.offsetWidth - carouselItemsWindow.offsetWidth) {
+        scrollPosition = carouselItemsHolder.offsetWidth - carouselItemsWindow.offsetWidth;
+    }
+    carouselItemsWindow.scrollTo({
+        left: scrollPosition,
+        behavior: 'smooth'
+    });
 });
 

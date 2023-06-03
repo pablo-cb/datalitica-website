@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     gap: var(--gap-32px);
-    /* padding-left: var(--padding-16px); */
     justify-content: center;
     align-content: center;
     /* flex-wrap: wrap; */
@@ -12,11 +11,13 @@
 
 .testimonials__title {
     text-align: center;
+    padding: 0 20px;
 }
 
 /* _______________________________________________________________  Carousel container with All Buttons and the indicator */
 
 .testimonials__carousel {
+    width: 100%;
     max-width: 108em;
     margin: 0 auto;
     overflow: hidden;
@@ -29,7 +30,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 -20px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 .testimonials__carousel-left-button-desktop,
@@ -49,6 +50,7 @@
     gap: 20px;
     flex-wrap: nowrap;
     overflow: auto;
+    /* padding: 0 16px; */
 }
 
 /* _______________________________________________________________  Card / item */
@@ -62,6 +64,7 @@
     /* width: calc(33.3vw - 172px); */
     flex: 0 0 calc(50% - 20px);
     flex-shrink: 0;
+    display: none;
 }
 
 .testimonials__carousel-item-text-block {
@@ -106,16 +109,27 @@
 /* _______________________________________________________________________________________________Small Laptop */
 @media screen and (min-width: 720px) {
 
+    .testimonials {
+        padding-left: var(--padding-20px);
+        padding-right: var(--padding-20px);
+    }
+
+    .testimonials__carousel-items {
+        padding: 0 20px;
+    }
+
     .testimonials__carousel-items-window {
         scroll-snap-type: x mandatory;
         scroll-padding: 0 20px;
     }
 
-    .testimonials__carousel-item {
-        scroll-snap-align: start;
-    }
+    /* .testimonials__carousel-items-holder {
+        padding: 0 0;
+    } */
 
     .testimonials__carousel-item {
+        /* display: none; */
+        scroll-snap-align: start;
         flex: 0 0 calc(33.3% - 20px);
     }
 
