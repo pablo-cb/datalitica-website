@@ -177,3 +177,5 @@ function buildServicesHTML(list) {
         });
     });
 }
+
+buildServicesHTML(servicesList);

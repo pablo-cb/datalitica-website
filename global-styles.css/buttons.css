@@ -7,6 +7,17 @@
     justify-content: center;
     color: var(--color-white);
 }
+  
+.button-primary:hover {
+    border: 2px solid var(--dark-purple);
+    padding: 0.6rem 1.4rem;
+    background-color: rgba(93, 25, 255, 0.90);
+}
+
+.button-primary:focus,          
+.button-primary:active {
+    background-color: var(--dark-purple);
+}
 
 .button-primary--blue-bg {
     border: 0;
@@ -16,6 +27,15 @@
     display: flex;
     justify-content: center;
     color: var(--primary);
+}
+
+.button-primary--blue-bg:hover {
+    background: rgba(13, 255, 235, 0.8);
+}
+
+.button-primary--blue-bg:focus,
+.button-primary--blue-bg:active {
+    background: rgba(13, 255, 235, 0.9);
 }
 
 .button-secondary {
@@ -28,6 +48,15 @@
     color: var(--primary);
 }
 
+.button-secondary:hover {
+    background-color: var(--base-gray);
+}
+
+.button-secondary:focus,
+.button-secondary:active {
+    background-color: #D8D8D8;
+}
+
 .button-secondary--blue-bg {
     border: 2px solid var(--color-white);
     padding: var(--padding-6px) var(--padding-16px);
@@ -36,6 +65,15 @@
     display: flex;
     justify-content: center;
     color: var(--color-white);
+}
+
+.button-secondary--blue-bg:hover {
+    background: rgba(231, 233, 234, 0.1);
+}
+
+.button-secondary--blue-bg:focus,
+.button-secondary--blue-bg:active {
+    background: rgba(231, 233, 234, 0.1);
 }
 
 .button-tertiary {
@@ -59,4 +97,15 @@
     display: flex;
     justify-content: center;
     color: var(--color-white);
+}
+
+.submit-button:hover {
+    border: 2px solid var(--dark-purple);
+    padding: 0.6rem 1.4rem;
+    background-color: rgba(93, 25, 255, 0.90);
+}
+
+.submit-button:focus,          
+.submit-button:active {
+    background-color: var(--dark-purple);
 }

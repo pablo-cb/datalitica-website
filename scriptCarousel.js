@@ -129,4 +129,3 @@ rightButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
