@@ -18,7 +18,7 @@ testimonialsList.push({
     testimonialPhoto: './public/testimonials--carouselitemimage@2x.png',
     testimonialName: 'Angela Smith 3',
     testimonialJob: 'Project Manager at Google',
-    testomonialText: '“Lorem ipsum dolor sit amet consectetur. Proin adipiscingorci neque varius pellentesque eu morbi malesuada.malesuada. malesuada.malesuada.”'
+    testomonialText: '“Lorem ipsum dolor sit amet consectetur. Proin adipiscingorci neque varius pellentesque eu morbi malesuada. malesuada malesuada malesuada.”'
 });
 
 testimonialsList.push({
@@ -35,6 +35,12 @@ testimonialsList.push({
     testomonialText: '“Lorem ipsum dolor sit amet consectetur. Proin adipiscingorci neque varius pellentesque eu morbi malesuada.”'
 });
 
+testimonialsList.push({
+    testimonialPhoto: './public/testimonials--carouselitemimage@2x.png',
+    testimonialName: 'Angela Smith 6',
+    testimonialJob: 'Project Manager at Google',
+    testomonialText: '“Lorem ipsum dolor sit amet consectetur. Proin adipiscingorci neque varius pellentesque eu morbi malesuada.”'
+});
 
 
 //  ______________________________________________________________________________________ Builds the testimonial cards
