@@ -73,7 +73,9 @@
             alt=""
             src="./public/contact-us-image.png"
             />
-            <form class="contact__form">
+
+
+            <form class="contact__form" onsubmit="return validateForm(event)" novalidate>
               <div class="contact__form-title-n-text">
                 <h1 class="contact__form-title h1-global-font">Contact Us</h1>
                 <p class="contact__form-text body-global-font">Drop a message, we will be glad to hear about your ideas.</p>
@@ -81,33 +83,36 @@
               <div class="contact__form-name-field">
                 <label for="your-name" class="label-global-font">Full Name*</label>
                 <input type="text" class="contact__form-name-input body-global-font" id="your-name" placeholder="Name">
+                <p class="error-message body-global-font" id="name-error" style="display: none">Please enter your name.</p>
               </div>
               <div class="contact__form-email-field">
                 <label for="your-email" class="label-global-font">Business Email*</label>
-                <input type="text" class="contact__form-email-input body-global-font" id="your-email" placeholder="Email">
+                <input type="email" class="contact__form-email-input body-global-font" id="your-email" placeholder="Email">
+                <p class="error-message body-global-font" id="email-error" style="display: none">Please enter a valid email address.</p>
               </div>
               <div class="contact__form-message-field">
                 <label for="your-message" class="label-global-font">Message*</label>
                 <textarea type="text" class="contact__form-message-input body-global-font" id="your-message" placeholder="Write your message"></textarea>
+                <p class="error-message body-global-font" id="message-error" style="display: none">Please enter your message.</p>
               </div>
               <p class="contact__form-disclaimer1 body-global-font">*Required fields</p>
-              <label class="contact__form-terms-n-conditions-checkbox body-global-font">
-                <input type="checkbox" class="contact__form-terms-checkbox">
-                <span class="contact__form-terms-checkmark"></span>
-                <span class="contact__form-terms-checkbox-label body-global-font">I have read and accepted the Terms & Conditions and Privacy Policy</span>
-              </label>                
+              <div class="checkbox-validation">
+                <label class="contact__form-terms-n-conditions-checkbox body-global-font">
+                  <input type="checkbox" class="contact__form-terms-checkbox" name="terms" required>
+                  <span class="contact__form-terms-checkmark"></span>
+                  <span class="contact__form-terms-checkbox-label body-global-font">I have read and accepted the Terms & Conditions and Privacy Policy</span>
+                </label>
+                <p class="error-message body-global-font" id="checkbox-error" style="display: none">Please accept the Terms & Conditions and Privacy Policy.</p>
+              </div>
               <div class="contact__form-button-n-disclaimer2">
                 <div class="contact__form-disclaimer2">
-                  <img
-                  class="contact__form-disclaimer2-icon"
-                  alt=""
-                  src="./public/contact-us-shield.svg"
-                  />
+                  <img class="contact__form-disclaimer2-icon" alt="" src="./public/contact-us-shield.svg" />
                   <p class="contact__form-disclaimer2-text body-global-font">Your privacy is protected</p>
                 </div>
                 <button class="contact__form-submit-button button-global-font submit-button">Send Message</button>
               </div>
             </form>
+            
 
           </div>
         </section>
@@ -173,5 +178,6 @@
     </footer>
 
     <script src="./script.js"></script>
+    <script src="./contactUs.js"></script>
   </body>
 </html>
