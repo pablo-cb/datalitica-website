@@ -9,6 +9,7 @@
     background: linear-gradient(2.4deg, #5d19ff, #008eff);
     justify-content: center;
     padding: 10rem var(--padding-16px);
+    margin-top: 7.2rem ;
 }
 
 .hero__container {

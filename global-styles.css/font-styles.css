@@ -83,6 +83,10 @@
     line-height: normal;
 }
 
+.link-global-font:hover {
+    text-decoration: underline;
+}
+
 .label-global-font {
     margin: 0;
     font-family: var(--titles-font);

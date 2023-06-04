@@ -84,8 +84,13 @@
     color: var(--accent-turquoise);
 }
 
+.button-tertiary:focus,
+.button-tertiary:hover {
+    background: var(--dark-purple);
+}
+
 .icon-button {
-    background-color: transparent;
+    background: transparent;
     padding: var(--padding-10px);
 }
 
