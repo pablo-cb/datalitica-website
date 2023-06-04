@@ -49,7 +49,7 @@ function validateForm(event) {
         checkboxError.style.display = 'none';
     }
 
-    // Agregar eventos de escucha para ocultar los mensajes de error cuando se interactúa con los campos
+    // Add listener events to hide error messages when interacting with fields
     nameInput.addEventListener('input', function() {
         nameError.style.display = 'none';
     });
@@ -70,9 +70,10 @@ function validateForm(event) {
         event.preventDefault();
     }
 
-    if (nameInput.value !== '' && emailInput.value !== '' && messageInput.value !== '' && checkboxInput.checked && isValid){
+    if (nameInput.value != '' && emailInput.value != '' && messageInput.value != '' && checkboxInput.checked && isValid){
         console.log("sí entro");
         showThankYouMessage();
+        event.preventDefault();
     }
 
     return isValid;
@@ -82,11 +83,11 @@ function validateForm(event) {
 
 
 function showThankYouMessage() {
-    // Oculta el formulario
+    // Hide Fom
     const formContainer = document.querySelector('.contact__form');
     formContainer.style.display = 'none';
 
-    // Crea el elemento del mensaje de agradecimiento y configura su contenido
+    // Create the thank you message element and configure its content
     const thankYouMessage = document.createElement('div');
     thankYouMessage.className = 'thank-you-message';
     thankYouMessage.innerHTML = `
@@ -96,7 +97,7 @@ function showThankYouMessage() {
     `;
     
 
-    // Agrega el mensaje de agradecimiento al contenedor del formulario
+    // Add the thank you message to the form container
     const formContainerParent = formContainer.parentNode;
     formContainerParent.appendChild(thankYouMessage);
 }
