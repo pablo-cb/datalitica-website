@@ -27,7 +27,6 @@ header {
 
 .navbar.active {
     background-color: var(--dark-base);
-
 }
 
 .navbar__elements-container {
