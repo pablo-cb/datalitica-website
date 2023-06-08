@@ -39,8 +39,10 @@
 
 .testimonials__carousel-items-window {
     width: 100%;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
+    overflow-x: hidden;
+    /* overflow-x: scroll; */
+    /* scroll-behavior: smooth; */
+    
     padding: 0 2rem;
 }
 
@@ -115,7 +117,7 @@
     }
 
     .testimonials__carousel-items-window {
-        scroll-snap-type: x mandatory;
+        /* scroll-snap-type: x mandatory; */
         scroll-padding: 0 2rem;
     }
 
