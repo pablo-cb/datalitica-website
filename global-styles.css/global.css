@@ -1,5 +1,5 @@
 html {
-  font-size: 10px;
+  font-size: 62.5%;
   box-sizing: border-box;
   background-color: var(--color-white);
   /* overflow: hidden; */
@@ -110,3 +110,12 @@ form {
   --br-500px: 50rem;
 }
 
+.animate {
+  opacity: 0;
+  /* display: none; */
+  transition: opacity 0.5s;
+}
+
+.animate.show {
+  opacity: 1;
+}

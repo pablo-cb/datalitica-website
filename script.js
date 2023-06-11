@@ -77,14 +77,19 @@ if (footerInstagramButtonImageIcon) {
 footerInstagramButtonImageIcon.addEventListener("click", function () {
     window.open("https://www.instagram.com/akureyinc/");
 });
-}
+};
+
+
 const scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
 const observer = new IntersectionObserver(
 (entries) => {
     for (const entry of entries) {
+
+    console.log("entry.isIntersecting " + entry.isIntersecting);
+    console.log("entry.intersectionRatio " + entry.intersectionRatio);
     if (entry.isIntersecting || entry.intersectionRatio > 0) {
         const targetElement = entry.target;
-        targetElement.classList.add("animate");
+        targetElement.classList.add("animate", "show");
         observer.unobserve(targetElement);
     }
     }
@@ -97,6 +102,3 @@ const observer = new IntersectionObserver(
 for (let i = 0; i < scrollAnimElements.length; i++) {
     observer.observe(scrollAnimElements[i]);
 }
-
-
-
