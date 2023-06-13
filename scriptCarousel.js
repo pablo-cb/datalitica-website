@@ -1,42 +1,42 @@
 const testimonialsList = [];
 
 testimonialsList.push({
-    testimonialPhoto: './public/testimonials--carouselitemimage@2x.png',
+    testimonialPhoto: './public/home/testimonials/testimonials--carouselitemimage@2x.png',
     testimonialName: 'Angela Smith 1',
     testimonialJob: 'Project Manager at Google',
     testomonialText: '“Lorem ipsum dolor sit amet consectetur. Proin adipiscingorci neque varius pellentesque eu morbi malesuada.”'
 });
 
 testimonialsList.push({
-    testimonialPhoto: './public/testimonials--carouselitemimage@2x.png',
+    testimonialPhoto: './public/home/testimonials/testimonials--carouselitemimage@2x.png',
     testimonialName: 'Angela Smith 2',
     testimonialJob: 'Project Manager at Google',
     testomonialText: '“Lorem ipsum dolor sit amet consectetur. Proin adipiscingorci neque varius pellentesque eu morbi malesuada.”'
 });
 
 testimonialsList.push({
-    testimonialPhoto: './public/testimonials--carouselitemimage@2x.png',
+    testimonialPhoto: './public/home/testimonials/testimonials--carouselitemimage@2x.png',
     testimonialName: 'Angela Smith 3',
     testimonialJob: 'Project Manager at Google',
     testomonialText: '“Lorem ipsum dolor sit amet consectetur. Proin adipiscingorci neque varius pellentesque eu morbi malesuada. malesuada malesuada malesuada.”'
 });
 
 testimonialsList.push({
-    testimonialPhoto: './public/testimonials--carouselitemimage@2x.png',
+    testimonialPhoto: './public/home/testimonials/testimonials--carouselitemimage@2x.png',
     testimonialName: 'Angela Smith 4',
     testimonialJob: 'Project Manager at Google',
     testomonialText: '“Lorem ipsum dolor sit amet consectetur. Proin adipiscingorci neque varius pellentesque eu morbi malesuada.”'
 });
 
 testimonialsList.push({
-    testimonialPhoto: './public/testimonials--carouselitemimage@2x.png',
+    testimonialPhoto: './public/home/testimonials/testimonials--carouselitemimage@2x.png',
     testimonialName: 'Angela Smith 5',
     testimonialJob: 'Project Manager at Google',
     testomonialText: '“Lorem ipsum dolor sit amet consectetur. Proin adipiscingorci neque varius pellentesque eu morbi malesuada.”'
 });
 
 testimonialsList.push({
-    testimonialPhoto: './public/testimonials--carouselitemimage@2x.png',
+    testimonialPhoto: './public/home/testimonials/testimonials--carouselitemimage@2x.png',
     testimonialName: 'Angela Smith 6',
     testimonialJob: 'Project Manager at Google',
     testomonialText: '“Lorem ipsum dolor sit amet consectetur. Proin adipiscingorci neque varius pellentesque eu morbi malesuada.”'

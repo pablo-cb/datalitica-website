@@ -42,14 +42,14 @@ function buildServicesHTML(list) {
         // Create the expand icon
         const expandIcon = document.createElement('img');
         expandIcon.classList.add('services__expand-card-expand-icon');
-        expandIcon.setAttribute('src', './public/services--expandcardplusicon.svg');
-        expandIcon.setAttribute('alt', '');
+        expandIcon.setAttribute('src', './public/home/services/blue-plus-icon.svg');
+        expandIcon.setAttribute('alt', 'blue plus icon');
 
         // Create the minimize icon
         const minimizeIcon = document.createElement('img');
         minimizeIcon.classList.add('services__expand-card-minimize-icon');
-        minimizeIcon.setAttribute('src', './public/services--expandcardminimizeicon.svg');
-        minimizeIcon.setAttribute('alt', '');
+        minimizeIcon.setAttribute('src', './public/home/services/blue-minus-icon.svg');
+        minimizeIcon.setAttribute('alt', 'blue minus icon');
         minimizeIcon.style.display = 'none';
 
         // Append the title and icons to the title container
@@ -92,6 +92,7 @@ function buildServicesHTML(list) {
             minimizeIcon.style.display = isCardActive ? 'none' : 'inline-block';
             expandIcon.style.display = isCardActive ? 'inline-block' : 'none';
             expandedText.style.display = isCardActive ? 'none' : 'block';
+            expandedText.style.maxHeight = isCardActive ? '0' : 'none';
 
             // Update the activeCard variable based on the toggle
             activeCard = isCardActive ? null : expandCard;

@@ -1,8 +1,7 @@
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* sets 10px = 1rem */
   box-sizing: border-box;
   background-color: var(--color-white);
-  /* overflow: hidden; */
 }
 body {
   margin: 0;
