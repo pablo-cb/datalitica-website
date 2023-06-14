@@ -122,25 +122,26 @@ header {
     padding-right: var(--padding-16px);
 }
 
-.index-mobile {
+.navbar-items {
     display: none;
     background-color: var(--dark-base);
 }
 
-.index-mobile.active {
+.navbar-items.active {
     display: flex;
     width: 100%;
 }
 
-.index-mobile__container {
+.navbar-items__container {
     display: flex;
     flex-direction: column;
     gap: var(--gap-32px);
     width: 100%;
+    padding-top: var(--padding-48px);
     padding-bottom: var(--padding-48px);
 }
 
-.index-mobile__item {
+.navbar-items__item {
     width: 100%;
     padding: 1rem 0;
     text-align: center;
@@ -153,7 +154,7 @@ header {
     .navbar__button-cta {
         width: 25rem;
     }
-    .index-mobile__container {
+    .navbar-items__container {
         align-items: center;
     }
 
@@ -183,7 +184,7 @@ header {
 /* _________________________________________________________________________Desktop */
 
 @media screen and (min-width: 720px) {
-    .index-mobile {
+    .navbar-items {
         display: none;
     }
 

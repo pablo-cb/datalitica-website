@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 function toggleMenu() {
-    const menuContainer = document.querySelector(".index-mobile");
+    const menuContainer = document.querySelector(".navbar-items");
     const hamburgerButton = document.querySelector(".navbar__hamburger-menu");
     const navbarColor = document.querySelector(".navbar");
     const changeLogoColor = document.querySelector(".navbar__button-logo-home");
@@ -28,7 +28,7 @@ function toggleMenu() {
     changeLogoColor.classList.toggle("active");
 }
 
-const indexMobileItems = document.querySelectorAll(".index-mobile__item");
+const indexMobileItems = document.querySelectorAll(".navbar-items__item");
 indexMobileItems.forEach(item => {
     item.addEventListener('click', toggleMenu);
 });

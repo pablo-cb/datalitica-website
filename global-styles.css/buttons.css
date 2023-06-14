@@ -80,7 +80,7 @@
     padding: var(--padding-10px) var(--padding-10px);
     border-radius: var(--br-55px);
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     color: var(--accent-turquoise);
 }
 
