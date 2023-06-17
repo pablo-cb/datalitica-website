@@ -41,7 +41,6 @@
 
 .index-container.show {
     gap: var(--gap-32px);
-    padding-bottom: var(--padding-16px);
 }
 
 
@@ -54,7 +53,8 @@
 }
 
 .index-item.active {
-    background-color: black;
+    background-color: var(--primary);
+    border-radius: var(--br-10px);
 }
 
 /* Animation */
@@ -96,7 +96,7 @@
         padding: 0 2rem;
         margin: 0;
         border-radius: 0;
-        box-shadow: 0;
+        box-shadow: none;
     }
 
     .index-container {
