@@ -67,14 +67,13 @@
 }
 .services__expand-card-expanded { /* Card content */
   align-self: stretch;
-  border-top: 1px solid var(--base-gray);
-  display: none;
-  padding: var(--padding-16px) 0;
-
   overflow: hidden;
-  transition: max-height 1s ease;
+  max-height: 0;
+  transition: max-height 0.5s ease;
 }
 
+
+/* Card */
 .services__expand-card {
   align-self: stretch;
   border-radius: var(--br-8px);
@@ -83,11 +82,19 @@
   display: flex;
   flex-direction: column;
   padding: var(--padding-16px);
-  gap: var(--gap-16px);
-
-  transition: height 1s ease;
+  transition: height 0.5s ease;
 }
 
+.services__expand-card.expanded {
+  height: auto;
+  gap: var(--gap-16px);
+}
+
+.services__expand-card.expanded .services__expand-card-expanded {
+  border-top: 1px solid var(--base-gray);
+  padding-top: var(--padding-16px);
+  max-height: 400px;
+}
 
 .services__content,
 .services__expand-cards {

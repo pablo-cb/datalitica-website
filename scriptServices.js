@@ -49,7 +49,7 @@ function buildServicesHTML(list) {
         const minimizeIcon = document.createElement('img');
         minimizeIcon.classList.add('services__expand-card-minimize-icon');
         minimizeIcon.setAttribute('src', './public/home/services/blue-minus-icon.svg');
-        minimizeIcon.setAttribute('alt', 'blue minus icon');
+        minimizeIcon.setAttribute('alt', 'blue minus');
         minimizeIcon.style.display = 'none';
 
         // Append the title and icons to the title container
@@ -81,18 +81,22 @@ function buildServicesHTML(list) {
             // Check if the clicked card is already active
             const isCardActive = activeCard === expandCard;
 
+            // Eliminar la clase "expanded" de todos los elementos ".services__expand-card"
+            const expandCards = document.querySelectorAll('.services__expand-card');
+            expandCards.forEach(card => {
+                card.classList.remove("expanded");
+            });
+
             // Reset the previous active card
             if (activeCard) {
+                activeCard.querySelector('.services__expand-card-expanded').maxHeight = '0';
                 activeCard.querySelector('.services__expand-card-minimize-icon').style.display = 'none';
                 activeCard.querySelector('.services__expand-card-expand-icon').style.display = 'inline-block';
-                activeCard.querySelector('.services__expand-card-expanded').style.display = 'none';
             }
 
             // Toggle the expand/minimize icons and expanded text for the clicked card
             minimizeIcon.style.display = isCardActive ? 'none' : 'inline-block';
             expandIcon.style.display = isCardActive ? 'inline-block' : 'none';
-            expandedText.style.display = isCardActive ? 'none' : 'block';
-            expandedText.style.maxHeight = isCardActive ? '0' : 'none';
 
             // Update the activeCard variable based on the toggle
             activeCard = isCardActive ? null : expandCard;
@@ -101,6 +105,7 @@ function buildServicesHTML(list) {
             if (!isCardActive) {
                 expandIcon.style.display = 'none';
                 minimizeIcon.style.display = 'inline-block';
+                expandCard.classList.add("expanded");
             }
         });
     });

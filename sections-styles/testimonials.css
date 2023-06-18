@@ -1,12 +1,10 @@
-/* _______________________________________________________________  Section */
-
 .testimonials {
     display: flex;
     flex-direction: column;
     gap: var(--gap-32px);
     justify-content: center;
     align-content: center;
-    margin: var(--margin-100px) 0;
+    padding: var(--padding-150px) 0;
 }
 
 .testimonials__title {

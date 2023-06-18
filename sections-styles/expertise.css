@@ -13,7 +13,7 @@
     border-radius: 0;
     background-color: rgba(231, 233, 234, 0.4);
     overflow: hidden;
-    padding: var(--padding-100px) var(--padding-16px);
+    padding: var(--padding-150px) var(--padding-16px);
     position: relative;
     gap: 1rem;
     width: auto;

@@ -25,7 +25,6 @@
 
 .index-item-active__container.show {
     border-bottom: 1px solid white;
-
 }
 
 .index-container {
@@ -36,11 +35,11 @@
     align-items: center;
     padding: 0;
     gap: 0;
-    padding-bottom: 0;
 }
 
 .index-container.show {
     gap: var(--gap-32px);
+    padding-bottom: var(--padding-16px);
 }
 
 
@@ -105,6 +104,11 @@
         justify-content: space-between;
         padding: 0 2rem;
         padding: 0;
+    }
+
+    .index-container.show {
+        gap: 0;
+        padding-bottom: 0;
     }
 
     .index-item-active__container {
