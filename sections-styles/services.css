@@ -75,6 +75,7 @@
 
 /* Card */
 .services__expand-card {
+  transition: height 0.5s ease;
   align-self: stretch;
   border-radius: var(--br-8px);
   background-color: var(--color-white);
@@ -82,7 +83,6 @@
   display: flex;
   flex-direction: column;
   padding: var(--padding-16px);
-  transition: height 0.5s ease;
 }
 
 .services__expand-card.expanded {

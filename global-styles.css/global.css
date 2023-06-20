@@ -1,19 +1,21 @@
+/* Set border-box to all the elements */
+
+*, *:before, *:after {
+  margin: 0;
+	padding: 0;
+  box-sizing: inherit;
+}
+
 html {
   font-size: 62.5%; /* sets 10px = 1rem */
   box-sizing: border-box;
   background-color: var(--color-white);
-  margin-top: 7.2rem;
 }
 
 body {
   margin: 0;
   line-height: normal;
-}
-
-/* Set border-box to all the elements */
-
-*, *:before, *:after {
-  box-sizing: inherit;
+  padding-top: 7.2rem;
 }
 
 button {
