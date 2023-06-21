@@ -1,0 +1,81 @@
+.testimonial-carousel {
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    background-color: yellow;
+  }
+  
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .carousel-wrapper {
+    display: flex;
+    /* width: calc(100% + 32px); */
+    margin: 0 -16px;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-item {
+    box-sizing: border-box;
+    flex: 0 0 calc((100% - 2 * 32px) / 3);
+    padding: 20px;
+    margin: 0 16px;
+    background-color: blue;
+    color: white;
+  }
+  
+  .carousel-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .carousel-item p {
+    margin-top: 10px;
+  }
+  
+  .carousel-item:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px blue;
+  }
+  
+  .carousel-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px;
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-dot.active {
+    background-color: #555;
+  }
+  
