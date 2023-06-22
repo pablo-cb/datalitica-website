@@ -4,7 +4,7 @@
     gap: var(--gap-32px);
     justify-content: center;
     align-content: center;
-    padding: var(--padding-150px) 0;
+    padding: var(--padding-150px) 1.6rem;
 }
 
 .testimonials__title {
@@ -18,7 +18,8 @@
     width: 100%;
     max-width: 108em;
     margin: 0 auto;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 /* _______________________________________________________________  Carousel container with left and right Buttons */
@@ -28,12 +29,13 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 -2rem;
+    width: 100%;
 }
 
-.testimonials__carousel-left-button-desktop,
+/* .testimonials__carousel-left-button-desktop,
 .testimonials__carousel-right-button-desktop {
     display: none;
-}
+} */
 
 .testimonials__carousel-items-window {
     width: 100%;
@@ -59,7 +61,6 @@
     background-color: var(--color-aqua-100);
     padding: var(--padding-32px) var(--padding-20px);
     gap: var(--gap-18px);
-    /* flex: 0 0 calc(50% - 2rem); */
     flex: 0 0 100%;
     flex-shrink: 0;
     display: none;
@@ -125,7 +126,7 @@
     .testimonials__carousel-item {
         scroll-snap-align: start;
         /* flex: 0 0 calc(33.3% - 1.8rem); */
-        flex: 0 0 calc((100% - 2 * 2rem) / 3);
+        flex: 0 0 calc((100% - 2rem) / 2);
     }
 
     .testimonials__carousel-left-button-desktop,
@@ -147,5 +148,10 @@
 
     .testimonials__carousel-items {
         margin: 0;
+    }
+
+    .testimonials__carousel-item {
+        scroll-snap-align: start;
+        flex: 0 0 calc((100% - 2 * 2rem) / 3);
     }
 }

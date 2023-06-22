@@ -91,9 +91,32 @@ function buildTestimonials(testimonials) {
 
 buildTestimonials(testimonialsList);
 
+const carouselLeftButton = document.getElementById('carousel-left-button');
+const carouselRightButton = document.getElementById('carousel-right-button');
+// const carouselItemsHolder = document.querySelector('.testimonials__carousel-items-holder');
+
+// Controlador de evento para el botón de desplazamiento izquierdo
+carouselLeftButton.addEventListener('click', () => {
+  carouselItemsHolder.scrollBy({
+    left: -carouselItemsHolder.offsetWidth,
+    behavior: 'smooth'
+  });
+});
+
+// Controlador de evento para el botón de desplazamiento derecho
+carouselRightButton.addEventListener('click', () => {
+  carouselItemsHolder.scrollBy({
+    left: carouselItemsHolder.offsetWidth,
+    behavior: 'smooth'
+  });
+});
+
+
+
+
 //  ______________________________________________________________________________________ Carousel Buttons
 
-
+/*
 const carouselItemsWindow = document.querySelector('.testimonials__carousel-items-window');
 const carouselItems = Array.from(document.querySelectorAll('.testimonials__carousel-item'));
 
@@ -129,3 +152,5 @@ rightButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+*/
