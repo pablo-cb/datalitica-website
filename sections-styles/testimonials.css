@@ -118,7 +118,7 @@
     }
 
     .testimonials__carousel-items-window {
-        /* scroll-snap-type: x mandatory; */
+        scroll-snap-type: x mandatory;
         scroll-padding: 0 2rem;
     }
 

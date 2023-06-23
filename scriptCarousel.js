@@ -1,3 +1,4 @@
+
 const testimonialsList = [];
 
 testimonialsList.push({
@@ -41,6 +42,14 @@ testimonialsList.push({
     testimonialJob: 'Project Manager at Google',
     testomonialText: '“Lorem ipsum dolor sit amet consectetur. Proin adipiscingorci neque varius pellentesque eu morbi malesuada.”'
 });
+
+testimonialsList.push({
+    testimonialPhoto: './public/home/testimonials/testimonials--carouselitemimage@2x.png',
+    testimonialName: 'Angela Smith 7',
+    testimonialJob: 'Project Manager at Google',
+    testomonialText: '“Lorem ipsum dolor sit amet consectetur. Proin adipiscingorci neque varius pellentesque eu morbi malesuada.”'
+});
+
 
 
 //  ______________________________________________________________________________________ Builds the testimonial cards
@@ -93,64 +102,191 @@ buildTestimonials(testimonialsList);
 
 const carouselLeftButton = document.getElementById('carousel-left-button');
 const carouselRightButton = document.getElementById('carousel-right-button');
-// const carouselItemsHolder = document.querySelector('.testimonials__carousel-items-holder');
+
+
+/*  EL siguiente código sí funciona
 
 // Controlador de evento para el botón de desplazamiento izquierdo
 carouselLeftButton.addEventListener('click', () => {
-  carouselItemsHolder.scrollBy({
-    left: -carouselItemsHolder.offsetWidth,
-    behavior: 'smooth'
+    const gap = getComputedStyle(carouselItemsHolder).gap;
+    const gapSize = parseInt(gap);
+    const screenWidth = window.innerWidth;
+  
+    let scrollAmount = carouselItemsHolder.offsetWidth;
+  
+    if (screenWidth >= 1200) {
+      // Desktop
+      scrollAmount += 2 * gapSize;
+    } else if (screenWidth >= 720 && screenWidth < 1200) {
+      // Small desktop
+      scrollAmount += gapSize;
+    } else if (screenWidth < 720) {
+      // Tablet and mobile
+      scrollAmount += gapSize;
+    }
+  
+    carouselItemsHolder.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth'
+    });
   });
-});
-
-// Controlador de evento para el botón de desplazamiento derecho
-carouselRightButton.addEventListener('click', () => {
-  carouselItemsHolder.scrollBy({
-    left: carouselItemsHolder.offsetWidth,
-    behavior: 'smooth'
+  
+  // Controlador de evento para el botón de desplazamiento derecho
+  carouselRightButton.addEventListener('click', () => {
+    const gap = getComputedStyle(carouselItemsHolder).gap;
+    const gapSize = parseInt(gap);
+    const screenWidth = window.innerWidth;
+  
+    let scrollAmount = carouselItemsHolder.offsetWidth;
+  
+    if (screenWidth >= 1200) {
+      // Desktop
+      scrollAmount += 2 * gapSize;
+    } else if (screenWidth >= 720 && screenWidth < 1200) {
+      // Small desktop
+      scrollAmount += gapSize;
+    } else if (screenWidth < 720) {
+      // Tablet and mobile
+      scrollAmount += gapSize;
+    }
+  
+    carouselItemsHolder.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
   });
-});
 
+*/
 
 
 
 //  ______________________________________________________________________________________ Carousel Buttons
 
-/*
-const carouselItemsWindow = document.querySelector('.testimonials__carousel-items-window');
-const carouselItems = Array.from(document.querySelectorAll('.testimonials__carousel-item'));
 
-const leftButton = document.querySelector('.testimonials__carousel-left-button-desktop');
-const rightButton = document.querySelector('.testimonials__carousel-right-button-desktop');
-
-const itemWidth = carouselItems[0].offsetWidth + 20;
-const scrollAmount = itemWidth * 3;
-
-let scrollPosition = 0;
-
-leftButton.addEventListener('click', () => {
-    console.log(scrollAmount + " click izquierdo");
-    
-    scrollPosition -= scrollAmount;
-    if (scrollPosition < 0) {
-        scrollPosition = 0;
+  // Función para determinar el ancho de los items según la cantidad de items visibles
+  function setItemWidth() {
+    const screenWidth = window.innerWidth;
+    const testimonialsListLength = testimonialsList.length;
+    let itemWidth;
+    let gap;
+  
+    if (screenWidth >= 1200) {
+      // Desktop
+      if (testimonialsListLength === 2) {
+        itemWidth = `calc((100% - 2rem) / 2)`;
+        gap = `2rem`;
+        carouselLeftButton.style.display = 'none';
+        carouselRightButton.style.display = 'none';
+      } else if (testimonialsListLength === 1) {
+        itemWidth = `100%`;
+        gap = `0`;
+        carouselLeftButton.style.display = 'none';
+        carouselRightButton.style.display = 'none';
+      } else if (testimonialsListLength === 3) {
+        itemWidth = `calc((100% - 2rem) / 3)`;
+        gap = `2rem`;
+        carouselLeftButton.style.display = 'none';
+        carouselRightButton.style.display = 'none';
+      } else if (testimonialsListLength > 3 && testimonialsListLength % 3 + 1 === 1) {
+        itemWidth = `calc((100% - 2rem) / 3)`;
+        gap = `2rem`;
+        carouselLeftButton.style.display = 'block';
+        carouselRightButton.style.display = 'block';
+      } else if (testimonialsListLength > 3 && testimonialsListLength % 3 + 2 === 2) {
+        itemWidth = `calc((100% - 2rem) / 3)`;
+        gap = `2rem`;
+        carouselLeftButton.style.display = 'block';
+        carouselRightButton.style.display = 'block';
+      }
+    } else if (screenWidth >= 720 && screenWidth < 1200) {
+      // Small desktop
+      if (testimonialsListLength === 1) {
+        itemWidth = `100%`;
+        gap = `0`;
+        carouselLeftButton.style.display = 'none';
+        carouselRightButton.style.display = 'none';
+      } else if (testimonialsListLength === 2) {
+        itemWidth = `100%`;
+        gap = `0`;
+        carouselLeftButton.style.display = 'none';
+        carouselRightButton.style.display = 'none';
+      } else if (testimonialsListLength > 2 && testimonialsListLength % 2 + 1 === 1) {
+        itemWidth = `calc((100% - 2rem) / 2)`;
+        gap = `2rem`;
+        carouselLeftButton.style.display = 'block';
+        carouselRightButton.style.display = 'block';
+      }
+    } else if (screenWidth < 720) {
+      // Tablet and mobile
+      if (testimonialsListLength === 1) {
+        itemWidth = `100%`;
+        gap = `0`;
+        carouselLeftButton.style.display = 'none';
+        carouselRightButton.style.display = 'none';
+      }
     }
-    carouselItemsWindow.scrollTo({
-        left: scrollPosition,
-        behavior: 'smooth'
-    });
-});
-
-rightButton.addEventListener('click', () => {
-    console.log(scrollAmount + " click derecho");
-    scrollPosition += scrollAmount;
-    if (scrollPosition > carouselItemsHolder.offsetWidth - carouselItemsWindow.offsetWidth) {
-        scrollPosition = carouselItemsHolder.offsetWidth - carouselItemsWindow.offsetWidth;
+  
+    carouselItemsHolder.style.setProperty('--item-width', itemWidth);
+    carouselItemsHolder.style.setProperty('--gap', gap);
+  }
+  
+  // Controlador de evento para el botón de desplazamiento izquierdo
+  carouselLeftButton.addEventListener('click', () => {
+    const screenWidth = window.innerWidth;
+    const testimonialsListLength = testimonialsList.length;
+  
+    let scrollAmount = carouselItemsHolder.offsetWidth;
+  
+    if (screenWidth >= 1200) {
+      // Desktop
+      if (testimonialsListLength > 3 && testimonialsListLength % 3 + 1 === 1) {
+        scrollAmount += 2 * parseFloat(getComputedStyle(carouselItemsHolder).getPropertyValue('gap'));
+      } else if (testimonialsListLength > 3 && testimonialsListLength % 3 + 2 === 2) {
+        scrollAmount += parseFloat(getComputedStyle(carouselItemsHolder).getPropertyValue('gap'));
+      }
+    } else if (screenWidth >= 720 && screenWidth < 1200) {
+      // Small desktop
+      if (testimonialsListLength > 2 && testimonialsListLength % 2 + 1 === 1) {
+        scrollAmount += parseFloat(getComputedStyle(carouselItemsHolder).getPropertyValue('gap'));
+      }
     }
-    carouselItemsWindow.scrollTo({
-        left: scrollPosition,
-        behavior: 'smooth'
+  
+    carouselItemsHolder.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth'
     });
-});
-
-*/
+  });
+  
+  // Controlador de evento para el botón de desplazamiento derecho
+  carouselRightButton.addEventListener('click', () => {
+    const screenWidth = window.innerWidth;
+    const testimonialsListLength = testimonialsList.length;
+  
+    let scrollAmount = carouselItemsHolder.offsetWidth;
+  
+    if (screenWidth >= 1200) {
+      // Desktop
+      if (testimonialsListLength > 3 && testimonialsListLength % 3 + 1 === 1) {
+        scrollAmount += 2 * parseFloat(getComputedStyle(carouselItemsHolder).getPropertyValue('gap'));
+      } else if (testimonialsListLength > 3 && testimonialsListLength % 3 + 2 === 2) {
+        scrollAmount += parseFloat(getComputedStyle(carouselItemsHolder).getPropertyValue('gap'));
+      }
+    } else if (screenWidth >= 720 && screenWidth < 1200) {
+      // Small desktop
+      if (testimonialsListLength > 2 && testimonialsListLength % 2 + 1 === 1) {
+        scrollAmount += parseFloat(getComputedStyle(carouselItemsHolder).getPropertyValue('gap'));
+      }
+    }
+  
+    carouselItemsHolder.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+  
+  // Controlador de evento para el cambio de tamaño de la ventana
+  window.addEventListener('resize', setItemWidth);
+  
+  // Inicializar el ancho de los items al cargar la página
+  setItemWidth();
+  
